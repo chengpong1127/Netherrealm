@@ -34,10 +34,12 @@ export function Scene({
       {scene.foreground && (
         <Image
           alt="Foreground"
-          className="relative z-10 w-full h-auto"
+          className="absolute left-0 bottom-0 translate-y-1/4 z-10"
+          height={600}
           layout="intrinsic"
           objectFit="contain"
           src={scene.foreground}
+          width={600}
         />
       )}
 

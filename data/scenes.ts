@@ -4,6 +4,7 @@ export const scenes: IScene[] = [
   {
     background: "/images/列車/abandoned train.jpg",
     soundEffect: "輕快音樂",
+    foreground: "/images/character.png",
   },
   {
     background: "/images/列車/abandoned train.jpg",
