@@ -15,4 +15,12 @@ export const scenes: IScene[] = [
     background: "/images/列車/abandoned train.jpg",
     description: "我只是一個敘述",
   },
+  {
+    background: "/images/列車/abandoned train.jpg",
+    buttons: [
+      { content: "我準備好了。", jumpPage: 1 },
+      { content: "這一定是夢……", jumpPage: 1 },
+    ],
+    description: "我只是一個敘述",
+  },
 ];

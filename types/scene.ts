@@ -4,8 +4,13 @@ export default interface IScene {
   conversation?: string;
   description?: string;
   soundEffect?: string;
-  button?: {
-    description: string;
+  buttons?: {
+    content: string;
     jumpPage: number;
+  }[];
+  exploreButton?: {
+    content: string;
+    position: { x: number; y: number };
   };
+  jumpPage?: number;
 }
