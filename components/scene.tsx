@@ -17,7 +17,7 @@ export function Scene({
   return (
     // eslint-disable-next-line jsx-a11y/no-static-element-interactions
     <div
-      className="relative w-full h-full"
+      className="relative w-full h-full overflow-hidden"
       onClick={() => !scene.buttons && onChangeScene?.(1)}
       onKeyDown={(e) => {
         if ((e.key === "Enter" || e.key === " ") && !scene.buttons) {
