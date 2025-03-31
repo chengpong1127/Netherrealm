@@ -64,8 +64,8 @@ export function Scene({
 
 function Conversation({ content }: { content: string }) {
   return (
-    <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-70 text-white h-1/6 flex items-center justify-center">
-      <p className="text-2xl text-center">{content}</p>
+    <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-70 text-white h-1/6 flex items-center justify-center backdrop-blur-md">
+      <p className="text-2xl text-center font-bold">{content}</p>
     </div>
   );
 }
@@ -73,8 +73,10 @@ function Conversation({ content }: { content: string }) {
 function Description({ content }: { content: string }) {
   return (
     <div className="absolute inset-0 flex items-center justify-center">
-      <div className="bg-black bg-opacity-30 text-white p-4 rounded-lg shadow-lg transform translate-y-64">
-        <p className="text-xl text-center">{content}</p>
+      <div className="bg-black bg-opacity-20 text-white p-8 rounded-full shadow-lg transform translate-y-64 backdrop-blur-sm">
+        <p className="text-2xl text-center font-bold whitespace-pre-line">
+          {content}
+        </p>
       </div>
     </div>
   );
@@ -89,10 +91,10 @@ function Button({
 }) {
   return (
     <button
-      className="bg-black bg-opacity-40 hover:bg-gray-700 text-white px-4 py-2 rounded-full shadow-md w-full"
+      className="bg-black bg-opacity-40 hover:bg-gray-700 text-white px-4 py-2 rounded-full shadow-md w-full backdrop-blur-md"
       onClick={onClick}
     >
-      <p className="text-lg text-left px-4">{content}</p>
+      <p className="text-2xl text-left px-4 font-bold">{content}</p>
     </button>
   );
 }
