@@ -15,5 +15,12 @@ export const scenes: IScene[] = [
       speaker: SpeakerType.XI,
       content: "辛苦了一個禮拜，好不容易休息了…",
     },
+    exploreButton: {
+      content: "我是",
+      position: {
+        x: 500,
+        y: 500,
+      },
+    },
   },
 ];

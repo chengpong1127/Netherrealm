@@ -1,5 +1,6 @@
 import Image from "next/image";
 import clsx from "clsx";
+import { Divider } from "@heroui/divider";
 
 import { useTypewriterEffect } from "@/hooks/useTypewriterEffect";
 import IScene from "@/types/scene";
@@ -59,6 +60,14 @@ export function Scene({
         </div>
       )}
 
+      {scene.exploreButton && (
+        <ExploreButton
+          content={scene.exploreButton.content}
+          position={scene.exploreButton.position}
+          onClick={() => onChangeScene?.(scene.jumpPage ?? 1)}
+        />
+      )}
+
       {scene.description && <Description content={scene.description} />}
       {scene.conversation && (
         <Conversation
@@ -81,10 +90,21 @@ function Conversation({
   const textColor = getSpeakerColor(speaker);
 
   return (
-    <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-60 h-1/6 flex items-center justify-center backdrop-blur-md">
-      <p className={clsx("text-2xl text-center font-bold", textColor)}>
-        {displayedText}
-      </p>
+    <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-60 h-1/6 flex flex-col backdrop-blur-md">
+      <div className="relative left-80 top-10">
+        <h1 className={clsx("text-2xl font-extrabold", textColor)}>
+          {speaker}
+        </h1>
+        <Divider className="mt-2 mb-5 bg-gray-500" />
+        <p
+          className={clsx(
+            "text-2xl text-left font-bold whitespace-pre-line",
+            textColor,
+          )}
+        >
+          {displayedText}
+        </p>
+      </div>
     </div>
   );
 }
@@ -97,7 +117,6 @@ function Description({ content }: { content: string }) {
       <div
         className="bg-black bg-opacity-20 text-white p-8 rounded-full shadow-lg transform translate-y-64 backdrop-blur-sm
         border border-white/30
-        shadow-[0_0_15px_rgba(255,255,255,0.5)]
         hover:shadow-[0_0_20px_rgba(255,255,255,0.7)]
         transition-shadow duration-300"
       >
@@ -127,6 +146,31 @@ function Button({
       onClick={onClick}
     >
       <p className="text-2xl text-left px-4 font-bold">{content}</p>
+    </button>
+  );
+}
+
+function ExploreButton({
+  content,
+  position,
+  onClick,
+}: {
+  content: string;
+  position: { x: number; y: number };
+  onClick: () => void;
+}) {
+  return (
+    <button
+      className="absolute text-white px-4 py-2 rounded-full backdrop-blur-sm
+        border-4  border-double h-32 w-32"
+      style={{
+        left: `${position.x}px`,
+        top: `${position.y}px`,
+        transform: "translate(-50%, -50%)",
+      }}
+      onClick={onClick}
+    >
+      <p className="text-lg text-center">{content}</p>
     </button>
   );
 }
