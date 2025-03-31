@@ -1,7 +1,11 @@
+import { SpeakerType } from "./speaker";
 export default interface IScene {
   background: string;
   foreground?: string;
-  conversation?: string;
+  conversation?: {
+    speaker: SpeakerType;
+    content: string;
+  };
   description?: string;
   soundEffect?: string;
   buttons?: {

@@ -17,6 +17,11 @@ const config = {
   },
   darkMode: "class",
   plugins: [heroui()],
+  safelist: [
+    'text-gray-400',
+    "text-white",
+    "text-cyan-200"
+  ]
 }
 
 module.exports = config;

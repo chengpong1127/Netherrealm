@@ -1,7 +1,10 @@
 import Image from "next/image";
+import clsx from "clsx";
 
 import { useTypewriterEffect } from "@/hooks/useTypewriterEffect";
 import IScene from "@/types/scene";
+import { SpeakerType } from "@/types/speaker";
+import { getSpeakerColor } from "@/data/speakerColor";
 
 export function Scene({
   scene,
@@ -58,17 +61,31 @@ export function Scene({
       )}
 
       {scene.description && <Description content={scene.description} />}
-      {scene.conversation && <Conversation content={scene.conversation} />}
+      {scene.conversation && (
+        <Conversation
+          content={scene.conversation.content}
+          speaker={scene.conversation.speaker}
+        />
+      )}
     </div>
   );
 }
 
-function Conversation({ content }: { content: string }) {
+function Conversation({
+  speaker,
+  content,
+}: {
+  speaker: SpeakerType;
+  content: string;
+}) {
   const displayedText = useTypewriterEffect(content);
+  const textColor = getSpeakerColor(speaker);
 
   return (
-    <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-70 text-white h-1/6 flex items-center justify-center backdrop-blur-md">
-      <p className="text-2xl text-center font-bold">{displayedText}</p>
+    <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-70 h-1/6 flex items-center justify-center backdrop-blur-md">
+      <p className={clsx("text-2xl text-center font-bold", textColor)}>
+        {displayedText}
+      </p>
     </div>
   );
 }

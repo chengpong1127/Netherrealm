@@ -1,4 +1,5 @@
 import IScene from "@/types/scene";
+import { SpeakerType } from "@/types/speaker";
 
 export const scenes: IScene[] = [
   {
@@ -10,6 +11,9 @@ export const scenes: IScene[] = [
       { content: "我準備好了。", jumpPage: 1 },
       { content: "這一定是夢……", jumpPage: 1 },
     ],
-    conversation: "我：「辛苦了一個禮拜，好不容易休息了…」",
+    conversation: {
+      speaker: SpeakerType.XI,
+      content: "辛苦了一個禮拜，好不容易休息了…",
+    },
   },
 ];
