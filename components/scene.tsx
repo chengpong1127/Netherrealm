@@ -1,5 +1,6 @@
 import Image from "next/image";
 
+import { useTypewriterEffect } from "@/hooks/useTypewriterEffect";
 import IScene from "@/types/scene";
 
 export function Scene({
@@ -63,19 +64,23 @@ export function Scene({
 }
 
 function Conversation({ content }: { content: string }) {
+  const displayedText = useTypewriterEffect(content);
+
   return (
     <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-70 text-white h-1/6 flex items-center justify-center backdrop-blur-md">
-      <p className="text-2xl text-center font-bold">{content}</p>
+      <p className="text-2xl text-center font-bold">{displayedText}</p>
     </div>
   );
 }
 
 function Description({ content }: { content: string }) {
+  const displayedText = useTypewriterEffect(content);
+
   return (
     <div className="absolute inset-0 flex items-center justify-center">
       <div className="bg-black bg-opacity-20 text-white p-8 rounded-full shadow-lg transform translate-y-64 backdrop-blur-sm">
         <p className="text-2xl text-center font-bold whitespace-pre-line">
-          {content}
+          {displayedText}
         </p>
       </div>
     </div>
