@@ -14,10 +14,15 @@ export function Scene({
   scene: IScene;
   onChangeScene?: (delta: number) => void;
 }) {
+  const isImagePath = scene.background.includes("/");
+
   return (
     // eslint-disable-next-line jsx-a11y/no-static-element-interactions
     <div
-      className="relative w-full h-full overflow-hidden"
+      className={clsx(
+        "relative w-full h-full overflow-hidden",
+        !isImagePath && scene.background,
+      )}
       onClick={() => !scene.buttons && onChangeScene?.(1)}
       onKeyDown={(e) => {
         if ((e.key === "Enter" || e.key === " ") && !scene.buttons) {
@@ -25,14 +30,15 @@ export function Scene({
         }
       }}
     >
-      {/* Background */}
-      <Image
-        alt="Background"
-        className="absolute inset-0 w-full h-auto"
-        layout="fill"
-        objectFit="cover"
-        src={scene.background}
-      />
+      {isImagePath && (
+        <Image
+          alt="Background"
+          className="absolute inset-0 w-full h-auto"
+          layout="fill"
+          objectFit="cover"
+          src={scene.background}
+        />
+      )}
 
       {/* Foreground */}
       {scene.foreground && (

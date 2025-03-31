@@ -4,6 +4,7 @@ import {heroui} from "@heroui/theme"
 const config = {
   content: [
     './components/**/*.{js,ts,jsx,tsx,mdx}',
+    './data/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
     "./node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}"
   ],
@@ -17,11 +18,6 @@ const config = {
   },
   darkMode: "class",
   plugins: [heroui()],
-  safelist: [
-    'text-gray-400',
-    "text-white",
-    "text-cyan-200"
-  ]
 }
 
 module.exports = config;

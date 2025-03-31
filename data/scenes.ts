@@ -3,7 +3,7 @@ import { SpeakerType } from "@/types/speaker";
 
 export const scenes: IScene[] = [
   {
-    background: "/images/列車/abandoned train.jpg",
+    background: "bg-green-500",
     soundEffect: "輕快音樂",
     foreground: "/images/character.png",
     description: "我只是一個敘述\n這是第二行",
