@@ -165,7 +165,7 @@ function ExploreButton({
 }) {
   return (
     <button
-      className="absolute text-white px-4 py-2 rounded-full backdrop-blur-sm
+      className="absolute text-white px-4 py-2 rounded-full backdrop-blur-sm bg-black bg-opacity-40
       border-4 border-double h-32 w-32
       hover:shadow-[0_0_20px_rgba(255,255,255,0.7)]
       transition-all duration-300"
