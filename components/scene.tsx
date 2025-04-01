@@ -19,16 +19,9 @@ export function Scene({
   const hasButtons: boolean = !!scene.buttons || !!scene.exploreButton;
 
   return (
-    <div
-      className="relative w-full h-full overflow-hidden select-none whitespace-pre-line"
-      role="button"
-      tabIndex={0}
+    <button
+      className="relative w-full h-full overflow-hidden select-none whitespace-pre-line cursor-default"
       onClick={() => !hasButtons && onChangeScene?.(scene.jumpPage ?? 1)}
-      onKeyDown={(e) => {
-        if ((e.key === "Enter" || e.key === " ") && !hasButtons) {
-          onChangeScene?.(scene.jumpPage ?? 1);
-        }
-      }}
     >
       <AnimatePresence
         mode={scene.transition?.mode ? scene.transition.mode : "sync"}
@@ -95,7 +88,7 @@ export function Scene({
           speaker={scene.conversation.speaker}
         />
       )}
-    </div>
+    </button>
   );
 }
 
