@@ -114,8 +114,6 @@ function Conversation({
 }
 
 function Description({ content }: { content: string }) {
-  const displayedText = useTypewriterEffect(content);
-
   return (
     <div className="absolute inset-0 flex items-center justify-center transform translate-y-[15%]">
       <div
@@ -123,7 +121,14 @@ function Description({ content }: { content: string }) {
         border border-white/30
         transition-shadow duration-300"
       >
-        <p className="text-center font-bold">{displayedText}</p>
+        <motion.p
+          animate={{ opacity: 1 }}
+          className="text-center font-bold"
+          initial={{ opacity: 0 }}
+          transition={{ duration: 1 }}
+        >
+          {content}
+        </motion.p>
       </div>
     </div>
   );
