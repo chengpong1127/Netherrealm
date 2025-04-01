@@ -167,8 +167,8 @@ function ExploreButton({
       hover:shadow-[0_0_20px_rgba(255,255,255,0.7)]
       transition-all duration-300"
       style={{
-        left: `${position.x}px`,
-        top: `${position.y}px`,
+        left: `${position.x}%`,
+        top: `${position.y}%`,
         transform: "translate(-50%, -50%)",
       }}
       onClick={onClick}
