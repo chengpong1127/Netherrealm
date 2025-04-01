@@ -207,31 +207,14 @@ export const scenes: IScene[] = [
   background: "/images/展覽館/gallery-pink-orig.png",
   foreground: "/images/character.png",
   soundEffect: "柔和緩慢的鋼琴",
-  description: "光芒散去後，周圍的空間開始具象化",
-},
-{
-  background: "/images/展覽館/gallery-pink-orig.png",
-  foreground: "/images/character.png",
-  soundEffect: "柔和緩慢的鋼琴",
-  conversation: {
-    speaker: SpeakerType.PLAYER,
-    content: "這是……展覽館？",
-  },
-},
-{
-  background: "/images/展覽館/gallery-pink-orig.png",
-  foreground: "/images/character.png",
-  soundEffect: "柔和緩慢的鋼琴",
-  conversation: {
-    speaker: SpeakerType.XI,
-    content: "歡迎回來。",
-  },
-},
-{
-  background: "/images/展覽館/gallery-pink-orig.png",
-  foreground: "/images/character.png",
-  soundEffect: "柔和緩慢的鋼琴",
   description: "現在是什麼情況？先弄清楚一下好了",
+  exploreButton: {
+      content: "詢問曦流",
+      position: {
+        x: 1200,
+        y: 500,
+      },
+  },
 },
 {
   background: "/images/展覽館/gallery-pink-orig.png",
@@ -247,18 +230,38 @@ export const scenes: IScene[] = [
   foreground: "/images/character.png",
   soundEffect: "柔和緩慢的鋼琴",
   description: "感覺是問不出實際內容了。還是先自己觀察看看？",
+  exploreButton: {
+    content: "環顧四周",
+    position: {
+      x: 500,
+      y: 500,
+    },
+  },
 },
 {
   background: "/images/展覽館/gallery-pink-orig.png",
   foreground: "/images/character.png",
   soundEffect: "柔和緩慢的鋼琴",
   description: "這座館內沒有其他人，由四面牆圍出四方型的對稱空間，空間不大、但不至於有壓迫感",
+  exploreButton: {
+    content: "觀察展品",
+    position: {
+      x: 500,
+      y: 500,
+    },
+  },
 },
 {
   background: "/images/展覽館/gallery-pink-orig.png",
   foreground: "/images/character.png",
   soundEffect: "柔和緩慢的鋼琴",
-  description: "這空間正中央從天花板垂吊著一些畫框，但大致上都框著空白的畫布",
+  description: "這空間正中央從天花板垂吊著一些畫框，但大致上都框著空白的畫布",exploreButton: {
+    content: "觀察拱型簾幕",
+    position: {
+      x: 500,
+      y: 500,
+    },
+  },
 },
 {
   background: "/images/展覽館/gallery-pink-orig.png",
@@ -345,6 +348,10 @@ export const scenes: IScene[] = [
     content: "也許，這就是你該先走的路。",
   },
   description: "門的縫隙中透出柔和的虹光，微微閃爍，如同等待著我的決定",
+  buttons: [
+      { content: "我準備好了。", jumpPage: 1 },
+      { content: "這一定是夢……", jumpPage: 2 },
+    ],
 },
 {
   background: "/images/展覽館/展品區.jpg",
@@ -376,10 +383,30 @@ export const scenes: IScene[] = [
   description: "光芒散去，那扇門似乎把我們傳送來一個不同的時空了，\n儘管這種事也不是第一次經歷，但我還是驚奇的四處張望",
 },
 {
+  background: "/images/彩虹路/1-小屋旁.jpeg",
+  foreground: "/images/character.png",
+  soundEffect: "鳥語花香",
+  description: "夕陽斜照在小屋與粉彩色系的菜園，微風輕輕吹拂，花瓣與葉片微微搖曳。\n門前有一條泛著彩虹色螢光的小徑穿越菜園與柵欄，通向花園外",
+  exploreButton: {
+    content: "小徑\n通向哪裡？",
+    position: {
+      x: 1200,
+      y: 500,
+    },
+  },
+},
+{
   background: "/images/彩虹路/3-花園裡-柵欄前.jpeg",
   foreground: "/images/character.png",
   soundEffect: "鳥語花香",
   description: "柵欄外杳無人煙，只有彩虹小徑獨自漫行，這間花園小屋就像是一座荒野中的綠洲",
+  exploreButton: {
+    content: "回小屋前",
+    position: {
+      x: 1200,
+      y: 500,
+    },
+  },
 },
 {
   background: "/images/彩虹路/1-小屋旁.jpeg",
@@ -396,14 +423,12 @@ export const scenes: IScene[] = [
   foreground: "/images/character.png",
   soundEffect: "鳥語花香",
   description: "屋內有舒適的沙發，屋外的花園有盛開的花……\n如果一直留在這裡，也不錯吧？",
-},
-{
-  background: "/images/彩虹路/1-小屋旁.jpeg",
-  foreground: "/images/character.png",
-  soundEffect: "鳥語花香",
-  conversation: {
-    speaker: SpeakerType.PLAYER,
-    content: "這裡的花開得真美……每天都能看到這樣的景色，好像也不錯。",
+  exploreButton: {
+    content: "探索花園",
+    position: {
+      x: 1200,
+      y: 500,
+    },
   },
 },
 {
@@ -422,6 +447,13 @@ export const scenes: IScene[] = [
   conversation: {
     speaker: SpeakerType.XI,
     content: "細水長流的幸福，也是一種選擇。",
+  },
+  exploreButton: {
+    content: "在屋簷前坐下",
+    position: {
+      x: 1200,
+      y: 500,
+    },
   },
   description: "曦流從花叢採了一些花葉，進屋沖了一壺茶",
 },
@@ -471,6 +503,13 @@ export const scenes: IScene[] = [
     content: "如果那裡有你好奇的東西，就走下去看看。變化是怎麼發生的，只有在路上才能知道。",
   },
   description: "曦流起身看著我，像是在邀請我同行",
+  exploreButton: {
+    content: "走吧",
+    position: {
+      x: 1200,
+      y: 500,
+    },
+  },
 },
 {
   background: "/images/彩虹路/4-彩虹路-荒原.jpeg",
@@ -483,12 +522,19 @@ export const scenes: IScene[] = [
   foreground: "/images/character.png",
   soundEffect: "羈旅風格的配樂、雨聲",
   description: "雲層迅速聚集，下了一場要大不大的雨，該怎麼做呢？",
+  buttons: [
+    { content: "躲進樹下避雨", jumpPage: 1 },
+    { content: "繼續前行", jumpPage: 4},
+  ],
 },
 {
   background: "/images/彩虹路/4-彩虹路-荒原.jpeg",
   foreground: "/images/character.png",
   soundEffect: "羈旅風格的配樂、雨聲",
   description: "在附近的樹下躲雨休息，意外發現樹洞中有一封瓶中信",
+  buttons: [
+    { content: "查看", jumpPage: 1 },
+  ],
 },
 {
   background: "/images/彩虹路/4-彩虹路-荒原.jpeg",
@@ -503,14 +549,20 @@ export const scenes: IScene[] = [
   description: "雨停了，身上沒有淋濕",
   conversation: {
     speaker: SpeakerType.XI,
-    content: "變化來時，不必急著趕路，先讓心跟上，或許風會替你帶來新的方向。",
+    content: "變化來時，不必急著趕路，先讓心跟上，或許風會替你帶來新的方向。",  
   },
+  buttons: [
+      { content: "追隨不知名旅人的腳步吧", jumpPage: 4},
+    ],
 },
 {
   background: "/images/彩虹路/4-彩虹路-荒原.jpeg",
   foreground: "/images/character.png",
   soundEffect: "羈旅風格的配樂、雨聲",
   description: "雨水帶來沁涼的青草氣息，我決定來場難得的雨中漫步。\n在路邊泥濘中撿到一封瓶中信",
+  buttons: [
+    { content: "查看", jumpPage: 1 },
+  ],
 },
 {
   background: "/images/彩虹路/4-彩虹路-荒原.jpeg",
@@ -525,13 +577,20 @@ export const scenes: IScene[] = [
   conversation: {
     speaker: SpeakerType.XI,
     content: "踏進未知的風雨裡，每一步都可能遇見意想不到的風景。",
-  },
+    },
+  buttons: [
+    { content: "追隨不知名旅人的腳步吧", jumpPage: 1},
+    ],
 },
 {
   background: "/images/彩虹路/4-彩虹路-荒原.jpeg",
   foreground: "/images/character.png",
   soundEffect: "羈旅風格的配樂",
   description: "彩虹小徑攀上一座一座的山坡，看起來路途崎嶇；如果放眼遠眺的話還是隱約看得到目標前往的山",
+  buttons: [
+    { content: "跟隨彩虹小徑的指引", jumpPage: 1 },
+    { content: "脫離彩虹小徑抄近路", jumpPage: 3},
+  ],
 },
 {
   background: "/images/彩虹路/5-彩虹路-山裡.jpg",
@@ -544,6 +603,7 @@ export const scenes: IScene[] = [
   description: "壯闊的奇景漸漸在眼前展開，小徑的色彩溶化進淺淺的溪谷，剩下碎石熠熠折射出虹光；兩側的山壁流轉瑰麗的礦物光澤，成為天地間的垂直流彩",
 },
 {
+  jumpPage: 3,
   background: "/images/彩虹路/5-彩虹路-山裡.jpg",
   foreground: "/images/character.png",
   soundEffect: "樹林溪水配樂",
@@ -552,6 +612,16 @@ export const scenes: IScene[] = [
     content: "跟著光走，借著過去的餘暉，可以讓自己看得更遠。",
   },
   description: "看著不可名狀的美景，我說不出足以形容它的詞彙，就連曦流都有些出神",
+},
+{
+  background: "/images/彩虹路/5-彩虹路-山裡.jpg",
+  foreground: "/images/character.png",
+  soundEffect: "樹林溪水配樂",
+  conversation: {
+    speaker: SpeakerType.PLAYER,
+    content: "……！",
+  },
+  description: "壯闊的奇景漸漸在眼前展開，小徑的色彩溶化進淺淺的溪谷，剩下碎石熠熠折射出虹光；兩側的山壁流轉瑰麗的礦物光澤，成為天地間的垂直流彩",
 },
 {
   background: "/images/彩虹路/5-彩虹路-山裡.jpg",
@@ -624,4 +694,5 @@ export const scenes: IScene[] = [
   soundEffect: "柔和緩慢的鋼琴",
   description: "光芒散去後，周圍的空間開始具象化，看起來我們被傳送到了另一個空間，而這裡看起來似曾相識",
 },
+
 ];
