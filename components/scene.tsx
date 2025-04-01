@@ -21,7 +21,7 @@ export function Scene({
     // eslint-disable-next-line jsx-a11y/no-static-element-interactions
     <div
       className={clsx(
-        "relative w-full h-full overflow-hidden",
+        "relative w-full h-full overflow-hidden select-none",
         !isImagePath && scene.background,
       )}
       onClick={() => !hasButtons && onChangeScene?.(scene.jumpPage ?? 1)}
