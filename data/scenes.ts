@@ -353,6 +353,7 @@ export const scenes: IScene[] = [
     ],
   },
   {
+    jumpPage: 2,
     background: "/images/展覽館/展品區.jpg",
     foreground: "/images/character.png",
     soundEffect: "柔和緩慢的鋼琴",
@@ -779,6 +780,7 @@ export const scenes: IScene[] = [
     ],
   },
   {
+    jumpPage: 2,
     background: "/images/展覽館/展品區.jpg",
     foreground: "/images/character.png",
     soundEffect: "柔和緩慢的鋼琴",
@@ -1094,7 +1096,7 @@ export const scenes: IScene[] = [
     foreground: "/images/character.png",
     soundEffect: "柔和緩慢的鋼琴",
     description:
-      "熟悉的展覽館再次映入眼簾，然而腳下傳來的觸感卻與記憶中的硬地板。我們踩在湖水與浮島交錯的濕地上，夜幕般的空間中，星星不僅點綴了湖面，也輕輕漂浮在空中，如同尚未落定的願望。",
+      "熟悉的展覽館再次映入眼簾，然而腳下傳來的觸感卻與記憶中的硬地板。\n我們踩在湖水與浮島交錯的濕地上，夜幕般的空間中，星星不僅點綴了湖面，也輕輕漂浮在空中，如同尚未落定的願望。",
   },
   {
     background: "/images/展覽館/展品區.jpg",
@@ -1171,6 +1173,7 @@ export const scenes: IScene[] = [
     ],
   },
   {
+    jumpPage: 2,
     background: "/images/展覽館/展品區.jpg",
     foreground: "/images/character.png",
     soundEffect: "柔和緩慢的鋼琴",
@@ -1510,6 +1513,7 @@ export const scenes: IScene[] = [
     ],
   },
   {
+    jumpPage: 2,
     background: "/images/展覽館/展品區.jpg",
     foreground: "/images/character.png",
     soundEffect: "柔和緩慢的鋼琴",
@@ -1528,7 +1532,457 @@ export const scenes: IScene[] = [
     },
   },
   {
-    background: "bg-gray",
+    background: "bg-gray-400",
     description: "下一站：審判殿堂",
   },
+  
+  // ----------------------------------------------------------------------------
+
+  {
+    background: "/images/審判/審判殿堂.jpeg",
+    soundEffect: "很安靜緩慢的琴聲",
+    description: "踏入了一座寧靜的石殿，或許「殿堂」並非最準確的形容。\n它沒有莊嚴的壁畫，取而代之的，是一片矗立於石間的參天古樹。樹根沿著石縫盤繞，藤蔓垂落，空氣中瀰漫著微涼的潮氣與淡淡的木香。",
+    conversation: {
+      speaker: SpeakerType.PLAYER,
+      content: "太安靜了...對了，曦流去哪裡了？",
+    },
+  },
+  {
+    background: "/images/審判/審判殿堂.jpeg",
+    soundEffect: "很安靜緩慢的琴聲",
+    description: "前方樹前，一道熟悉的身影站在樹影下。\n——是曦流。",
+    conversation: {
+      speaker: SpeakerType.PLAYER,
+      content: "......！",
+    },
+  },
+  {
+    background: "/images/審判/審判殿堂.jpeg",
+    soundEffect: "很安靜緩慢的琴聲",
+    description: "當只是看著那些文字，意識裡隱隱有丟失已久的什麼在翻湧。\n這裡有種力量，好像我可以稍微看到我來到這裡之前的人生輪廓。",
+    conversation: {
+      speaker: SpeakerType.PLAYER,
+      content: "這地方……和剛才的場景完全不同。",
+    },
+  },
+  {
+    background: "/images/審判/審判殿堂.jpeg",
+    soundEffect: "很安靜緩慢的琴聲",
+    description: "曦流的氣質也變了，彷彿她在前幾站中帶給我那種柔和的陪伴感是一種錯覺。\n她的白裙輕輕飄動，像是與這座樹林融為一體，或許這種素淨和悠遠更接近她的本質。",
+    conversation: {
+      speaker: SpeakerType.XI,
+      content: "這裡，是選擇留下痕跡的地方。",
+    },
+  },
+  {
+    background: "/images/審判/審判殿堂.jpeg",
+    soundEffect: "很安靜緩慢的琴聲",
+    description: "選擇？……妳的意思是，我剛才做的那些選擇？",
+  },
+  {
+    background: "/images/審判/審判殿堂.jpeg",
+    soundEffect: "很安靜緩慢的琴聲",
+    description: "曦流輕輕觸碰身後的樹幹，眼前浮現帶著細細光子的畫面，像是點燃了一場無聲的回憶",
+    conversation: {
+      speaker: SpeakerType.XI,
+      content: "你還記得嗎？",
+    },
+  },
+  {
+    background: "/images/審判/審判殿堂.jpeg",
+    soundEffect: "很安靜緩慢的琴聲",
+    description: "現在的你，更偏好哪種人生態度呢？",
+    buttons: [
+      { content: "安然自得", jumpPage: 1 },
+      { content: "享受變化", jumpPage: 1 },
+    ],
+  },
+  {
+    background: "/images/審判/審判殿堂.jpeg",
+    soundEffect: "很安靜緩慢的琴聲",
+    description: "古樹的一部份葉子變成粉紅色的了",
+  },
+  {
+    background: "/images/審判/審判殿堂.jpeg",
+    soundEffect: "很安靜緩慢的琴聲",
+    description: "現在的你，偏好哪一種面對欲望時的逐夢原則呢？",
+    buttons: [
+      { content: "奮力追求", jumpPage: 1 },
+      { content: "隨緣隨喜", jumpPage: 1 },
+    ],
+  },
+  {
+    background: "/images/審判/審判殿堂.jpeg",
+    soundEffect: "很安靜緩慢的琴聲",
+    description: "古樹的一部份葉子變成藍色的了",
+  },
+  {
+    background: "/images/審判/審判殿堂.jpeg",
+    soundEffect: "很安靜緩慢的琴聲",
+    description: "現在的你，面對過往的視角偏向哪一種呢？",
+    buttons: [
+      { content: "對幸福感恩", jumpPage: 1 },
+      { content: "與遺憾和解", jumpPage: 1 },
+    ],
+  },
+  {
+    background: "/images/審判/審判殿堂.jpeg",
+    soundEffect: "很安靜緩慢的琴聲",
+    description: "古樹的一部份葉子變成綠色的了，現在整棵樹的葉子都上色了",
+  },
+  {
+    background: "/images/審判/審判殿堂.jpeg",
+    soundEffect: "很安靜緩慢的琴聲",
+    description: "曦流伸出手，輕輕碰觸樹的表面，樹幹上的字跡輕輕閃爍，在末端追加了幾行。\n她早就知道一切吧？",
+    conversation: {
+      speaker: SpeakerType. XI,
+      content: "在來到這裡前，你曾經有一段很長過往。",
+    },
+    buttons: [
+      { content: "是，我有過一段人生，在這個世界、這個介面以外的。", jumpPage: 1 },
+    ],
+  },
+  {
+    background: "/images/審判/審判殿堂.jpeg",
+    soundEffect: "很安靜緩慢的琴聲",
+    conversation: {
+      speaker: SpeakerType.XI,
+      content: "你在這個世界以外的過去，做的選擇和現在一樣嗎？",
+    },
+    buttons: [
+      { content: "一樣", jumpPage: 1 },
+      { content: "有些不一樣", jumpPage: 1 },
+      { content: "全都不一樣", jumpPage: 1 },
+    ],
+  },
+  {
+    background: "/images/審判/審判殿堂.jpeg",
+    soundEffect: "很安靜緩慢的琴聲",
+    conversation: {
+      speaker: SpeakerType.XI,
+      content: "無論你的答案是什麼，它們都無法改變，也不會消失。",
+    },
+    buttons: [
+      { content: "這些選擇是對的嗎？", jumpPage: 1 },
+      { content: "所以，這些選擇和我是一體的嗎？", jumpPage: 6 },
+    ],
+  },
+  {
+    background: "/images/審判/審判殿堂.jpeg",
+    soundEffect: "很安靜緩慢的琴聲",
+    conversation: {
+      speaker: SpeakerType.XI,
+      content: "對錯？那是你自己定義的。我們不在這裡審判對錯，而是讓你看看自己。",
+    },
+  },
+  {
+    background: "/images/審判/審判殿堂.jpeg",
+    soundEffect: "很安靜緩慢的琴聲",
+    conversation: {
+      speaker: SpeakerType.PLAYER,
+      content: "可是……如果我後悔了呢？",
+    },
+  },
+  {
+    background: "/images/審判/審判殿堂.jpeg",
+    soundEffect: "很安靜緩慢的琴聲",
+    conversation: {
+      speaker: SpeakerType.XI,
+      content: "後悔也只是一種選擇吧。",
+    },
+  },
+  {
+    background: "/images/審判/審判殿堂.jpeg",
+    soundEffect: "很安靜緩慢的琴聲",
+    conversation: {
+      speaker: SpeakerType.PLAYER,
+      content: "……所以，沒有所謂對錯？",
+    },
+  },
+  {
+    background: "/images/審判/審判殿堂.jpeg",
+    soundEffect: "很安靜緩慢的琴聲",
+    conversation: {
+      speaker: SpeakerType.XI,
+      content: "也許有、也許沒有。只是，現在的你，至少知道了你也有要不要後悔的選擇權。",
+    },
+    buttons: [
+      { content: "沉默地陷入思考", jumpPage: 4 },
+    ],
+  },
+  {
+    jumpPage: 6,
+    background: "/images/審判/審判殿堂.jpeg",
+    soundEffect: "很安靜緩慢的琴聲",
+    conversation: {
+      speaker: SpeakerType.XI,
+      content: "你做的決定、你當時的想法、猶豫、渴望，不是都屬於你嗎？",
+    },
+  },
+  {
+    background: "/images/審判/審判殿堂.jpeg",
+    soundEffect: "很安靜緩慢的琴聲",
+    conversation: {
+      speaker: SpeakerType.PLAYER,
+      content: "換句話說……無論選了什麼，都是真實的我？",
+    },
+  },
+  {
+    background: "/images/審判/審判殿堂.jpeg",
+    soundEffect: "很安靜緩慢的琴聲",
+    description: "曦流視線輕輕掃過周圍。\n這些都是我的？\n我凝視著眼前景色，想找出我和它的連結。",
+    conversation: {
+      speaker: SpeakerType.XI,
+      content: "這裡，都是你的。",
+    },
+  },
+  {
+    background: "/images/審判/審判殿堂.jpeg",
+    soundEffect: "很安靜緩慢的琴聲",
+    description: "曦流能解答我的過去與現在，但仔細想想，我對她一無所知",
+    conversation: {
+      speaker: SpeakerType.XI,
+      content: "……那你呢？",
+    },
+  },
+  {
+    background: "/images/審判/審判殿堂.jpeg",
+    soundEffect: "很安靜緩慢的琴聲",
+    description: "這是我第一次，真正向曦流提問關於她本身的問題。",
+    conversation: {
+      speaker: SpeakerType.XI,
+      content: "我並沒有過去可供審視。",
+    },
+    buttons: [
+      { content: "......？", jumpPage: 1 },
+    ],
+  },
+  {
+    background: "/images/審判/審判殿堂.jpeg",
+    soundEffect: "很安靜緩慢的琴聲",
+    conversation: {
+      speaker: SpeakerType.PLAYER,
+      content: "……你沒有記憶嗎？",
+    },
+  },
+  {
+    background: "/images/審判/審判殿堂.jpeg",
+    soundEffect: "很安靜緩慢的琴聲",
+    description: "語氣依舊平穩，卻帶著一絲淡淡的遙遠感",
+    conversation: {
+      speaker: SpeakerType.XI,
+      content: "或者說，這裡沒有我的位置。",
+    },
+  },
+  {
+    background: "/images/審判/審判殿堂.jpeg",
+    soundEffect: "她或許是比我想像的，更加不同的存在？",
+    conversation: {
+      speaker: SpeakerType.PLAYER,
+      content: "……那你是什麼？",
+    },
+  },
+  {
+    background: "/images/審判/審判殿堂.jpeg",
+    soundEffect: "很安靜緩慢的琴聲",
+    description: "她時常望著我說話，但這次，她的視線似乎穿透了表面的我，看向了我的靈魂",
+    conversation: {
+      speaker: SpeakerType.XI,
+      content: "我是這片審判殿堂的一部分。\n或者說……我是你的影子。",
+    },
+  },
+  {
+    background: "/images/審判/審判殿堂.jpeg",
+    soundEffect: "很安靜緩慢的琴聲",
+    conversation: {
+      speaker: SpeakerType.XI,
+      content: "我是——你看不見的自己。",
+    },
+    buttons: [
+      { content: "......！", jumpPage: 1 },
+    ],
+  },
+  {
+    background: "/images/審判/審判殿堂.jpeg",
+    soundEffect: "很安靜緩慢的琴聲",
+    description: "她輕輕伸出手，示意我看看四周。\n這裡並沒有她的名字，沒有她的過去，也沒有任何痕跡。\n這世界的一切彷彿只和我有關。",
+    conversation: {
+      speaker: SpeakerType.XI,
+      content: "從旅程的起點開始，你一直在追尋答案；想知道關於這個世界的意義、還有自己的存在。",
+    },
+  },
+  {
+    background: "/images/審判/審判殿堂.jpeg",
+    soundEffect: "很安靜緩慢的琴聲",
+    description: "她的語氣微妙地柔和了些",
+    conversation: {
+      speaker: SpeakerType.XI,
+      content: "你懷疑過，害怕過，也試圖逃避；可是你還是一步步走到了這裡。為什麼？",
+    },
+    buttons: [
+      { content: "想說點什麼，但發現自己無法立刻回答", jumpPage: 1 },
+    ],
+  },
+  {
+    background: "/images/審判/審判殿堂.jpeg",
+    soundEffect: "很安靜緩慢的琴聲",
+    conversation: {
+      speaker: SpeakerType.XI,
+      content: "如果你不願意直視這一切，就不會來到這裡。\n你問我是誰；那麼，你又是誰？",
+    },
+  },
+  {
+    background: "/images/審判/審判殿堂.jpeg",
+    soundEffect: "很安靜緩慢的琴聲",
+    description: "這個問題像是一道微光，劃破腦海深處某個未曾觸及的角落",
+  },
+  {
+    background: "/images/審判/審判殿堂.jpeg",
+    soundEffect: "很安靜緩慢的琴聲",
+    description: "這個世界的構成好像是因為我。\n雖然不知道這個虛構世界觀怎麼成型的，但是它完全和我的內在意識吻合。",
+    buttons: [
+      { content: "……我是誰？", jumpPage: 1 },
+    ],
+  },
+  {
+    background: "/images/審判/審判殿堂.jpeg",
+    soundEffect: "很安靜緩慢的琴聲",
+    description: "曦流，其實只是沒有實體的概念嗎？\n想到這裡，我抬頭迎向曦流的目光，想確認心中的想法",
+    buttons: [
+      { content: "……你是……", jumpPage: 1 },
+    ],
+  },
+  {
+    background: "/images/審判/審判殿堂.jpeg",
+    soundEffect: "很安靜緩慢的琴聲",
+    description: "曦流微不可查的點頭，像是在肯定我的推論......\n她拿出一顆可以放在掌上的小樹遞過來，那就是這次要帶我回去的關鍵吧",
+    conversation: {
+      speaker: SpeakerType.XI,
+      content: "是的。已經沒有什麼是我能解答的了。該出發了。",
+    },
+  },
+  {
+    background: "/images/審判/審判殿堂.jpeg",
+    soundEffect: "很安靜緩慢的琴聲",
+    description: "我大概理解我為什麼在這裡了，我們的下一步要去哪裡呢？",
+    conversation: {
+      speaker: SpeakerType.PLAYER,
+      content: "……接下來呢？",
+    },
+  },
+  {
+    background: "/images/審判/審判殿堂.jpeg",
+    soundEffect: "很安靜緩慢的琴聲",
+    conversation: {
+      speaker: SpeakerType.XI,
+      content: "我哪裡都不會去。",
+    },
+  },
+  {
+    background: "/images/審判/審判殿堂.jpeg",
+    soundEffect: "很安靜緩慢的琴聲",
+    description: "她的語氣帶著某種無可動搖的確定，讓我微微一怔",
+    },
+  {
+    background: "/images/審判/審判殿堂.jpeg",
+    soundEffect: "很安靜緩慢的琴聲",
+    description: "她完全沒有要邁開腳步的意思，跟那顆古樹一樣佇立在原地",
+    conversation: {
+      speaker: SpeakerType.XI,
+      content: "我就是殿堂的一部份。我會留在這裡。",
+    },
+  },
+  {
+    background: "/images/審判/審判殿堂.jpeg",
+    soundEffect: "很安靜緩慢的琴聲",
+    description: "這是一個無法改變的事實，我知道的。\n但我還是默默向她伸出手，第一次主動邀請她與我同行。",
+    },
+  {
+    background: "/images/審判/審判殿堂.jpeg",
+    soundEffect: "很安靜緩慢的琴聲",
+    description: "曦流的眼神依舊沒有波瀾，只是把小樹交到了我手上；帶我離開的白光就此溢出，就這樣要道別了嗎？",
+    },
+  {
+    background: "bg-white",
+    soundEffect: "很安靜緩慢的琴聲",
+    conversation: {
+      speaker: SpeakerType.XI,
+      content: "我一直都在這裡。",
+    },
+    description: "在白得看不清曦流的輪廓時，傳來了她的低語",
+    },
+  
+    // --------------------------------------------------------------------------------
+
+    {
+      background: "/images/展覽館/展品區.jpg",
+      soundEffect: "柔和緩慢的鋼琴",
+      description:
+        "回來了。高聳的樹木在微光下投下層層疊疊的陰影，石柱零星佇立在林間，彷彿見證著一場無聲的告別。\n藍、綠、粉的落葉鋪滿了地面，隨著微風輕輕翻動，像是時光殘留下的片語斷章。",
+    },
+    {
+      background: "/images/展覽館/展品區.jpg",
+      soundEffect: "柔和緩慢的鋼琴",
+      description:
+        "很寂靜的感覺。……接下來的路，需要由我自己走了吧？\n像是在問自己，也像是在問那片林間，問那個已經不在身邊的人。",
+    },
+    {
+      background: "/images/展覽館/展品區.jpg",
+      soundEffect: "柔和緩慢的鋼琴",
+      description:
+        "明明剛才她還在這裡，卻像是從來沒有存在過一樣。\n我試圖回憶她的聲音、她的目光、她那些平淡卻真切的話語，\n可這一切如今變得遙遠，像是留在夢境的邊緣，快要被時間沖散了。",
+    },
+    {
+      background: "/images/展覽館/展品區.jpg",
+      soundEffect: "柔和緩慢的鋼琴",
+      description:
+        "這種感覺算是一種遺憾嗎？\n但心裡確實空了一塊，像有什麼無聲地塌陷下去。",
+    },
+    {
+      background: "/images/展覽館/展品區.jpg",
+      soundEffect: "柔和緩慢的鋼琴",
+      description:
+        "收回視線，轉身踏入展覽館大廳。\n……不知不覺間，這裡變了；展區變得更加廣闊，原本空曠的展櫃不知何時多了許多展品；\n那些，是我的記憶嗎？",
+    },
+    {
+      background: "/images/展覽館/展品區.jpg",
+      soundEffect: "柔和緩慢的鋼琴",
+      description:
+        "靜靜地走過展覽館，目光掃過這些變化。\n從旅程開始到現在，我曾經疑惑過這間展覽館到底是什麼，為什麼它總是隨著旅程而變化。",
+      conversation: {
+        speaker: SpeakerType.PLAYER,
+        content: "我明白了。這裡從來不是一個獨立的地方，它一直與我自己有著千絲萬縷的聯繫。",
+      },
+      },
+      {
+        background: "/images/展覽館/展品區.jpg",
+        soundEffect: "柔和緩慢的鋼琴",
+        conversation: {
+          speaker: SpeakerType.PLAYER,
+          content: "這裡承載著我的選擇，我的思考，我的猶豫，也承載著我一路走來的感悟與痕跡。\n這間展覽館，是我的內心世界。",
+        },
+        },
+        {
+          background: "/images/展覽館/展品區.jpg",
+          soundEffect: "柔和緩慢的鋼琴",
+          description:
+            "停下腳步，展覽館的中央出現一道門。\n它沒有任何標示，也沒有任何提示，只是一扇靜靜等候的門。",
+          conversation: {
+            speaker: SpeakerType.PLAYER,
+            content: "直覺從這扇門走出去，就是徹底離開展覽館了。",
+          },
+          },
+          {
+            background: "/images/展覽館/展品區.jpg",
+            soundEffect: "柔和緩慢的鋼琴",
+            description:
+              "準備好離開這個與自己內心相連的地方，回到真正的生命之中了嗎？\n至少這一次，我做了確切的選擇",
+              buttons: [
+                { content: "開門離開", jumpPage: 1 },
+              ],
+            },   
+    {
+      background: "bg-[#335CA4]",
+      description: "下一站：？？？",
+    },
 ];
