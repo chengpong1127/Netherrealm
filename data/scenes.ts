@@ -211,18 +211,9 @@ export const scenes: IScene[] = [
   exploreButton: {
       content: "詢問曦流",
       position: {
-        x: 1200,
-        y: 500,
+        x: 70,
+        y: 70,
       },
-  },
-},
-{
-  background: "/images/展覽館/gallery-pink-orig.png",
-  foreground: "/images/character.png",
-  soundEffect: "柔和緩慢的鋼琴",
-  conversation: {
-    speaker: SpeakerType.XI,
-    content: "你的處境取決於你怎麼定義。",
   },
 },
 {
@@ -233,8 +224,8 @@ export const scenes: IScene[] = [
   exploreButton: {
     content: "環顧四周",
     position: {
-      x: 1200,
-      y: 500,
+      x: 70,
+      y: 70,
     },
   },
 },
@@ -246,8 +237,8 @@ export const scenes: IScene[] = [
   exploreButton: {
     content: "觀察展品",
     position: {
-      x: 1200,
-      y: 500,
+      x: 70,
+      y: 70,
     },
   },
 },
@@ -255,11 +246,12 @@ export const scenes: IScene[] = [
   background: "/images/展覽館/gallery-pink-orig.png",
   foreground: "/images/character.png",
   soundEffect: "柔和緩慢的鋼琴",
-  description: "這空間正中央從天花板垂吊著一些畫框，但大致上都框著空白的畫布",exploreButton: {
+  description: "這空間正中央從天花板垂吊著一些畫框，但大致上都框著空白的畫布",
+  exploreButton: {
     content: "觀察拱型簾幕",
     position: {
-      x: 1200,
-      y: 500,
+      x: 70,
+      y: 70,
     },
   },
 },
@@ -390,8 +382,8 @@ export const scenes: IScene[] = [
   exploreButton: {
     content: "小徑\n通向哪裡？",
     position: {
-      x: 1200,
-      y: 500,
+      x: 70,
+      y: 70,
     },
   },
 },
@@ -422,8 +414,8 @@ export const scenes: IScene[] = [
   exploreButton: {
     content: "探索花園",
     position: {
-      x: 1200,
-      y: 500,
+      x: 70,
+      y: 70,
     },
   },
 },
@@ -445,10 +437,10 @@ export const scenes: IScene[] = [
     content: "細水長流的幸福，也是一種選擇。",
   },
   exploreButton: {
-    content: "在屋簷前坐下",
+    content: "在屋簷前\n坐下",
     position: {
-      x: 1200,
-      y: 500,
+      x: 70,
+      y: 70,
     },
   },
   description: "曦流從花叢採了一些花葉，進屋沖了一壺茶",
@@ -721,8 +713,8 @@ export const scenes: IScene[] = [
   exploreButton: {
     content: "靠近查看",
     position: {
-      x: 1200,
-      y: 500,
+      x: 70,
+      y: 70,
     },
   },
 },
@@ -732,20 +724,21 @@ export const scenes: IScene[] = [
   description: "「有些星星落入掌心，\n有些則隨波閃爍。\n但它們點亮夜空的那一刻，已經足夠美麗。」",
 },
 {
-  background: "/images/展覽館/簾幕開.png",
+  background: "/images/展覽館/簾幕開.jpg",
   foreground: "/images/character.png",
   soundEffect: "柔和緩慢的鋼琴",
   description: "讀完後，簾幕無聲地向兩側揭開，露出門後的空間——",
   exploreButton: {
     content: "進入空間",
     position: {
-      x: 1200,
-      y: 500,
+      x: 70,
+      y: 70,
     },
   },
 },
 {
-  background: "/images/展覽館/展品區.png",
+  background: "/images/展覽館/展品區.jpg",
+  foreground: "/images/character.png",
   soundEffect: "柔和緩慢的鋼琴",
   description: "跟剛才初次進入彩虹路與小屋的小展間一樣，空蕩蕩的，只有一扇門和空展櫃",
   conversation: {
@@ -792,5 +785,154 @@ export const scenes: IScene[] = [
 
 // ----------------------------------------------------------------------------------------------
 
-
+{
+  background: "/images/星湖/2-lake.jpg",
+  foreground: "/images/character.png",
+  soundEffect: "風鈴",
+  description: "視線漸漸清晰，眼前展開一片靜謐的湖泊，水面深邃如夜空，點綴著無數漂浮的星星。這些星星時而閃爍，時而輕輕旋轉，像是溫柔地呼吸著光",
+  conversation: {
+    speaker: SpeakerType.PLAYER,
+    content: "……！",
+  },
+},
+{
+  background: "/images/星湖/2-lake.jpg",
+  foreground: "/images/character.png",
+  soundEffect: "風鈴",
+  description: "星星隨著水波輕輕顫動，發出微弱的鈴聲，閃爍著朦朧的光暈。我直覺那些不只是星星，而是某種更能感召我的渴望的美好事物",
+  conversation: {
+    speaker: SpeakerType.PLAYER,
+    content: "這些星星……是不是可以撈起來？",
+  },
+},
+{
+  background: "/images/星湖/2-lake.jpg",
+  foreground: "/images/character.png",
+  soundEffect: "風鈴",
+  description: "曦流遞上捕蟲網，並協助划船靠近星星",
+  conversation: {
+    speaker: SpeakerType.XI,
+    content: "試試看吧。",
+  },
+},
+{
+  background: "/images/星湖/2-surface.jpg",
+  soundEffect: "風鈴",
+  conversation: {
+    speaker: SpeakerType.XI,
+    content: "試著點擊星星將它們撈起來吧。",
+  },
+  exploreButton: {
+    content: "小時候的目標",
+    position: {
+      x: 70,
+      y: 70,
+    },
+  },
+},
+{
+  background: "/images/星湖/2-surface.jpg",
+  soundEffect: "風鈴",
+  conversation: {
+    speaker: SpeakerType.XI,
+    content: "試著點擊星星將它們撈起來吧。",
+  },
+  exploreButton: {
+    content: "競選社團幹部",
+    position: {
+      x: 70,
+      y: 70,
+    },
+  },
+},
+{
+  background: "/images/星湖/2-surface.jpg",
+  soundEffect: "風鈴",
+  conversation: {
+    speaker: SpeakerType.XI,
+    content: "試著點擊星星將它們撈起來吧。",
+  },
+  exploreButton: {
+    content: "演唱會的票",
+    position: {
+      x: 70,
+      y: 70,
+    },
+  },
+},
+{
+  background: "/images/星湖/2-surface.jpg",
+  soundEffect: "風鈴",
+  conversation: {
+    speaker: SpeakerType.XI,
+    content: "試著點擊星星將它們撈起來吧。",
+  },
+  exploreButton: {
+    content: "對自由的嚮往",
+    position: {
+      x: 70,
+      y: 70,
+    },
+  },
+},
+{
+  background: "/images/星湖/2-surface.jpg",
+  soundEffect: "風鈴",
+  conversation: {
+    speaker: SpeakerType.XI,
+    content: "試著點擊星星將它們撈起來吧。",
+  },
+  exploreButton: {
+    content: "喜歡過的人",
+    position: {
+      x: 70,
+      y: 70,
+    },
+  },
+},
+{
+  background: "/images/星湖/2-surface.jpg",
+  soundEffect: "風鈴",
+  conversation: {
+    speaker: SpeakerType.XI,
+    content: "試著點擊星星將它們撈起來吧。",
+  },
+  exploreButton: {
+    content: "期待進入的公司",
+    position: {
+      x: 70,
+      y: 70,
+    },
+  },
+},
+{
+  background: "/images/星湖/2-lake.jpg",
+  foreground: "/images/character.png",
+  soundEffect: "風鈴",
+  description: "嘗試了幾次，但大部分的星星在撈起來前就消散了",
+  conversation: {
+    speaker: SpeakerType.PLAYER,
+    content: "……",
+  },
+},
+{
+  background: "/images/星湖/2-lake.jpg",
+  foreground: "/images/character.png",
+  soundEffect: "風鈴",
+  description: "嘗試了幾次，但大部分的星星在撈起來前就消散了",
+  conversation: {
+    speaker: SpeakerType.PLAYER,
+    content: "……",
+  },
+},
+{
+  background: "/images/星湖/2-lake.jpg",
+  foreground: "/images/character.png",
+  soundEffect: "風鈴",
+  description: "嘗試了幾次，但大部分的星星在撈起來前就消散了",
+  conversation: {
+    speaker: SpeakerType.PLAYER,
+    content: "還要繼續撈嗎？",
+  },
+},
 ];
