@@ -233,7 +233,7 @@ export const scenes: IScene[] = [
   exploreButton: {
     content: "環顧四周",
     position: {
-      x: 500,
+      x: 1200,
       y: 500,
     },
   },
@@ -246,7 +246,7 @@ export const scenes: IScene[] = [
   exploreButton: {
     content: "觀察展品",
     position: {
-      x: 500,
+      x: 1200,
       y: 500,
     },
   },
@@ -258,7 +258,7 @@ export const scenes: IScene[] = [
   description: "這空間正中央從天花板垂吊著一些畫框，但大致上都框著空白的畫布",exploreButton: {
     content: "觀察拱型簾幕",
     position: {
-      x: 500,
+      x: 1200,
       y: 500,
     },
   },
@@ -372,7 +372,7 @@ export const scenes: IScene[] = [
   },
 },
 {
-  background: "bg-[#E5ADAD]",
+  background: "bg-[#A95473]",
   description: "下一站：彩虹路與小屋",
 },
 // ---------------------------------------------------------------------------------------
@@ -400,13 +400,9 @@ export const scenes: IScene[] = [
   foreground: "/images/character.png",
   soundEffect: "鳥語花香",
   description: "柵欄外杳無人煙，只有彩虹小徑獨自漫行，這間花園小屋就像是一座荒野中的綠洲",
-  exploreButton: {
-    content: "回小屋前",
-    position: {
-      x: 1200,
-      y: 500,
-    },
-  },
+  buttons: [
+    { content: "回小屋前", jumpPage: 1 },
+  ],
 },
 {
   background: "/images/彩虹路/1-小屋旁.jpeg",
@@ -503,13 +499,9 @@ export const scenes: IScene[] = [
     content: "如果那裡有你好奇的東西，就走下去看看。變化是怎麼發生的，只有在路上才能知道。",
   },
   description: "曦流起身看著我，像是在邀請我同行",
-  exploreButton: {
-    content: "走吧",
-    position: {
-      x: 1200,
-      y: 500,
-    },
-  },
+  buttons: [
+    { content: "走吧", jumpPage: 1 },
+  ],
 },
 {
   background: "/images/彩虹路/4-彩虹路-荒原.jpeg",
@@ -688,11 +680,117 @@ export const scenes: IScene[] = [
     content: "……！？",
   },
 },
+
 // ---------------------------------------------------------------------------------------------
+
 {
   background: "/images/展覽館/展品區.jpg",
+  foreground: "/images/character.png",
   soundEffect: "柔和緩慢的鋼琴",
-  description: "光芒散去後，周圍的空間開始具象化，看起來我們被傳送到了另一個空間，而這裡看起來似曾相識",
+  description: "熟悉的展區輪廓重新浮現，但這次，剛剛還空蕩蕩的空間，如今已經悄然變化——展區中央鋪滿了柔軟的草地，一道道彩虹色的小徑交錯穿行，彷彿陽光灑落後留下的溫暖痕跡",
+  conversation: {
+    speaker: SpeakerType.PLAYER,
+    content: "我們難道是回來了？這裡變了？",
+  },
 },
+{
+  background: "/images/展覽館/展品區.jpg",
+  foreground: "/images/character.png",
+  soundEffect: "柔和緩慢的鋼琴",
+  description: "原本空無一物的展櫃，此刻靜靜擺放著一件嶄新的藏品，款式跟剛才溪流給的紀念品有些異曲同工",
+  conversation: {
+    speaker: SpeakerType.XI,
+    content: "這裡一直在變，只是你現在才注意到。",
+  },
+},
+{
+  background: "/images/展覽館/展品區.jpg",
+  foreground: "/images/character.png",
+  soundEffect: "柔和緩慢的鋼琴",
+  description: "曦流像預想中的一樣並沒有回應，但一雙帶著敘事的眼眸瞥向展覽館的另一側，我也看了過去",
+  conversation: {
+    speaker: SpeakerType.PLAYER,
+    content: "這才是這個小展間真正的樣貌，對嗎？",
+  },
+},
+{
+  background: "/images/展覽館/gallery-pink-orig.png",
+  foreground: "/images/character.png",
+  soundEffect: "柔和緩慢的鋼琴",
+  description: "湖綠色那一道拱型布幕上的金屬銘牌閃過一抹碎光",
+  exploreButton: {
+    content: "靠近查看",
+    position: {
+      x: 1200,
+      y: 500,
+    },
+  },
+},
+{
+  background: "/images/展覽館/gallery-pink-orig.png",
+  soundEffect: "柔和緩慢的鋼琴",
+  description: "「有些星星落入掌心，\n有些則隨波閃爍。\n但它們點亮夜空的那一刻，已經足夠美麗。」",
+},
+{
+  background: "/images/展覽館/簾幕開.png",
+  foreground: "/images/character.png",
+  soundEffect: "柔和緩慢的鋼琴",
+  description: "讀完後，簾幕無聲地向兩側揭開，露出門後的空間——",
+  exploreButton: {
+    content: "進入空間",
+    position: {
+      x: 1200,
+      y: 500,
+    },
+  },
+},
+{
+  background: "/images/展覽館/展品區.png",
+  soundEffect: "柔和緩慢的鋼琴",
+  description: "跟剛才初次進入彩虹路與小屋的小展間一樣，空蕩蕩的，只有一扇門和空展櫃",
+  conversation: {
+    speaker: SpeakerType.PLAYER,
+    content: "不知道這扇門背後又會是什麼？",
+  },
+},
+{
+  background: "/images/展覽館/展品區.jpg",
+  foreground: "/images/character.png",
+  soundEffect: "柔和緩慢的鋼琴",
+  conversation: {
+    speaker: SpeakerType.XI,
+    content: "也許，這就是你該先走的路。",
+  },
+  description: "門的縫隙中透出柔和的虹光，微微閃爍，如同等待著我的決定",
+  buttons: [
+      { content: "我準備好了。", jumpPage: 1 },
+      { content: "這果然是夢……", jumpPage: 2 },
+    ],
+},
+{
+  background: "/images/展覽館/展品區.jpg",
+  foreground: "/images/character.png",
+  soundEffect: "柔和緩慢的鋼琴",
+  conversation: {
+    speaker: SpeakerType.XI,
+    content: "很好，這趟旅程才剛開始，讓我們走吧。",
+  },
+},
+{
+  background: "/images/展覽館/展品區.jpg",
+  foreground: "/images/character.png",
+  soundEffect: "柔和緩慢的鋼琴",
+  conversation: {
+    speaker: SpeakerType.XI,
+    content: "夢也好，不是夢也好，這都不影響它是真的發生過。",
+  },
+},
+{
+  background: "bg-[#4B7679]",
+  description: "下一站：星胡",
+},
+
+// ----------------------------------------------------------------------------------------------
+
 
 ];
