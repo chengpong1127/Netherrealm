@@ -211,18 +211,9 @@ export const scenes: IScene[] = [
   exploreButton: {
       content: "詢問曦流",
       position: {
-        x: 1200,
-        y: 500,
+        x: 70,
+        y: 70,
       },
-  },
-},
-{
-  background: "/images/展覽館/gallery-pink-orig.png",
-  foreground: "/images/character.png",
-  soundEffect: "柔和緩慢的鋼琴",
-  conversation: {
-    speaker: SpeakerType.XI,
-    content: "你的處境取決於你怎麼定義。",
   },
 },
 {
@@ -233,8 +224,8 @@ export const scenes: IScene[] = [
   exploreButton: {
     content: "環顧四周",
     position: {
-      x: 1200,
-      y: 500,
+      x: 70,
+      y: 70,
     },
   },
 },
@@ -246,8 +237,8 @@ export const scenes: IScene[] = [
   exploreButton: {
     content: "觀察展品",
     position: {
-      x: 1200,
-      y: 500,
+      x: 70,
+      y: 70,
     },
   },
 },
@@ -255,11 +246,12 @@ export const scenes: IScene[] = [
   background: "/images/展覽館/gallery-pink-orig.png",
   foreground: "/images/character.png",
   soundEffect: "柔和緩慢的鋼琴",
-  description: "這空間正中央從天花板垂吊著一些畫框，但大致上都框著空白的畫布",exploreButton: {
+  description: "這空間正中央從天花板垂吊著一些畫框，但大致上都框著空白的畫布",
+  exploreButton: {
     content: "觀察拱型簾幕",
     position: {
-      x: 1200,
-      y: 500,
+      x: 70,
+      y: 70,
     },
   },
 },
@@ -390,8 +382,8 @@ export const scenes: IScene[] = [
   exploreButton: {
     content: "小徑\n通向哪裡？",
     position: {
-      x: 1200,
-      y: 500,
+      x: 70,
+      y: 70,
     },
   },
 },
@@ -422,8 +414,8 @@ export const scenes: IScene[] = [
   exploreButton: {
     content: "探索花園",
     position: {
-      x: 1200,
-      y: 500,
+      x: 70,
+      y: 70,
     },
   },
 },
@@ -447,8 +439,8 @@ export const scenes: IScene[] = [
   exploreButton: {
     content: "在屋簷前\n坐下",
     position: {
-      x: 1200,
-      y: 500,
+      x: 70,
+      y: 70,
     },
   },
   description: "曦流從花叢採了一些花葉，進屋沖了一壺茶",
@@ -721,8 +713,8 @@ export const scenes: IScene[] = [
   exploreButton: {
     content: "靠近查看",
     position: {
-      x: 1200,
-      y: 500,
+      x: 70,
+      y: 70,
     },
   },
 },
@@ -739,8 +731,8 @@ export const scenes: IScene[] = [
   exploreButton: {
     content: "進入空間",
     position: {
-      x: 1200,
-      y: 500,
+      x: 70,
+      y: 70,
     },
   },
 },
@@ -833,8 +825,8 @@ export const scenes: IScene[] = [
   exploreButton: {
     content: "小時候的目標",
     position: {
-      x: 1200,
-      y: 500,
+      x: 70,
+      y: 70,
     },
   },
 },
@@ -848,8 +840,8 @@ export const scenes: IScene[] = [
   exploreButton: {
     content: "競選社團幹部",
     position: {
-      x: 1200,
-      y: 500,
+      x: 70,
+      y: 70,
     },
   },
 },
@@ -863,8 +855,8 @@ export const scenes: IScene[] = [
   exploreButton: {
     content: "演唱會的票",
     position: {
-      x: 1200,
-      y: 500,
+      x: 70,
+      y: 70,
     },
   },
 },
@@ -878,8 +870,8 @@ export const scenes: IScene[] = [
   exploreButton: {
     content: "對自由的嚮往",
     position: {
-      x: 1200,
-      y: 500,
+      x: 70,
+      y: 70,
     },
   },
 },
@@ -893,8 +885,8 @@ export const scenes: IScene[] = [
   exploreButton: {
     content: "喜歡過的人",
     position: {
-      x: 1200,
-      y: 500,
+      x: 70,
+      y: 70,
     },
   },
 },
@@ -908,8 +900,8 @@ export const scenes: IScene[] = [
   exploreButton: {
     content: "期待進入的公司",
     position: {
-      x: 1200,
-      y: 500,
+      x: 70,
+      y: 70,
     },
   },
 },
