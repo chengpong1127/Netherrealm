@@ -52,8 +52,16 @@ export function Scene({
           width={600}
         />
       )}
+      {scene.description && <Description content={scene.description} />}
 
-      {/* Buttons */}
+      {scene.exploreButton && (
+        <ExploreButton
+          content={scene.exploreButton.content}
+          position={scene.exploreButton.position}
+          onClick={() => onChangeScene?.(scene.jumpPage ?? 1)}
+        />
+      )}
+
       {scene.buttons && (
         <div className="absolute top-1/2 -right-6 transform -translate-y-1/2 flex flex-col space-y-8 w-1/5">
           {scene.buttons.map(({ content, jumpPage }, index) => (
@@ -65,16 +73,6 @@ export function Scene({
           ))}
         </div>
       )}
-
-      {scene.exploreButton && (
-        <ExploreButton
-          content={scene.exploreButton.content}
-          position={scene.exploreButton.position}
-          onClick={() => onChangeScene?.(scene.jumpPage ?? 1)}
-        />
-      )}
-
-      {scene.description && <Description content={scene.description} />}
       {scene.conversation && (
         <Conversation
           content={scene.conversation.content}
@@ -119,11 +117,10 @@ function Description({ content }: { content: string }) {
   const displayedText = useTypewriterEffect(content);
 
   return (
-    <div className="absolute inset-0 flex items-center justify-center">
+    <div className="absolute inset-0 flex items-center justify-center transform translate-y-[15%]">
       <div
-        className="bg-black bg-opacity-20 text-white p-8 rounded-full shadow-lg transform translate-y-64 backdrop-blur-sm
+        className="bg-black bg-opacity-20 text-white p-8 rounded-full shadow-lg backdrop-blur-sm
         border border-white/30
-        hover:shadow-[0_0_20px_rgba(255,255,255,0.7)]
         transition-shadow duration-300"
       >
         <p className="text-2xl text-center font-bold whitespace-pre-line">
@@ -168,7 +165,9 @@ function ExploreButton({
   return (
     <button
       className="absolute text-white px-4 py-2 rounded-full backdrop-blur-sm
-        border-4  border-double h-32 w-32"
+      border-4 border-double h-32 w-32
+      hover:shadow-[0_0_20px_rgba(255,255,255,0.7)]
+      transition-all duration-300"
       style={{
         left: `${position.x}px`,
         top: `${position.y}px`,
