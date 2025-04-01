@@ -2,6 +2,10 @@ import { SpeakerType } from "./speaker";
 export default interface IScene {
   background: string;
   foreground?: string;
+  transition?: {
+    duration: number;
+    mode?: "sync" | "wait";
+  };
   conversation?: {
     speaker: SpeakerType;
     content: string;

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import clsx from "clsx";
 import { Divider } from "@heroui/divider";
+import { motion, AnimatePresence } from "framer-motion"; // Add AnimatePresence import
 
 import { useTypewriterEffect } from "@/hooks/useTypewriterEffect";
 import IScene from "@/types/scene";
@@ -18,12 +19,10 @@ export function Scene({
   const hasButtons: boolean = !!scene.buttons || !!scene.exploreButton;
 
   return (
-    // eslint-disable-next-line jsx-a11y/no-static-element-interactions
     <div
-      className={clsx(
-        "relative w-full h-full overflow-hidden select-none",
-        !isImagePath && scene.background,
-      )}
+      className="relative w-full h-full overflow-hidden select-none whitespace-pre-line"
+      role="button"
+      tabIndex={0}
       onClick={() => !hasButtons && onChangeScene?.(scene.jumpPage ?? 1)}
       onKeyDown={(e) => {
         if ((e.key === "Enter" || e.key === " ") && !hasButtons) {
@@ -31,15 +30,31 @@ export function Scene({
         }
       }}
     >
-      {isImagePath && (
-        <Image
-          alt="Background"
+      <AnimatePresence
+        mode={scene.transition?.mode ? scene.transition.mode : "sync"}
+      >
+        <motion.div
+          key={scene.background}
+          animate={{ opacity: 1 }}
           className="absolute inset-0 w-full h-auto"
-          layout="fill"
-          objectFit="cover"
-          src={scene.background}
-        />
-      )}
+          exit={{ opacity: 0 }}
+          initial={{ opacity: 0 }}
+          transition={{
+            duration: scene.transition ? scene.transition.duration : 0.5,
+          }}
+        >
+          {isImagePath ? (
+            <Image
+              alt="Background"
+              layout="fill"
+              objectFit="cover"
+              src={scene.background}
+            />
+          ) : (
+            <div className={clsx("h-full w-full", scene.background)} />
+          )}
+        </motion.div>
+      </AnimatePresence>
 
       {/* Foreground */}
       {scene.foreground && (
@@ -101,12 +116,7 @@ function Conversation({
           {speaker}
         </h1>
         <Divider className="mt-2 mb-5 bg-gray-500" />
-        <p
-          className={clsx(
-            "text-2xl text-left font-bold whitespace-pre-line",
-            textColor,
-          )}
-        >
+        <p className={clsx("text-2xl text-left font-bold", textColor)}>
           {displayedText}
         </p>
       </div>
@@ -124,9 +134,7 @@ function Description({ content }: { content: string }) {
         border border-white/30
         transition-shadow duration-300"
       >
-        <p className="text-2xl text-center font-bold whitespace-pre-line">
-          {displayedText}
-        </p>
+        <p className="text-2xl text-center font-bold">{displayedText}</p>
       </div>
     </div>
   );
