@@ -816,7 +816,7 @@ export const scenes: IScene[] = [
   },
 },
 {
-  background: "/images/星湖/2-surface.jpg",
+  background: "/images/星湖/2-surface.png",
   soundEffect: "風鈴",
   conversation: {
     speaker: SpeakerType.XI,
@@ -831,7 +831,7 @@ export const scenes: IScene[] = [
   },
 },
 {
-  background: "/images/星湖/2-surface.jpg",
+  background: "/images/星湖/2-surface.png",
   soundEffect: "風鈴",
   conversation: {
     speaker: SpeakerType.XI,
@@ -846,7 +846,7 @@ export const scenes: IScene[] = [
   },
 },
 {
-  background: "/images/星湖/2-surface.jpg",
+  background: "/images/星湖/2-surface.png",
   soundEffect: "風鈴",
   conversation: {
     speaker: SpeakerType.XI,
@@ -861,7 +861,7 @@ export const scenes: IScene[] = [
   },
 },
 {
-  background: "/images/星湖/2-surface.jpg",
+  background: "/images/星湖/2-surface.png",
   soundEffect: "風鈴",
   conversation: {
     speaker: SpeakerType.XI,
@@ -876,7 +876,7 @@ export const scenes: IScene[] = [
   },
 },
 {
-  background: "/images/星湖/2-surface.jpg",
+  background: "/images/星湖/2-surface.png",
   soundEffect: "風鈴",
   conversation: {
     speaker: SpeakerType.XI,
@@ -891,7 +891,7 @@ export const scenes: IScene[] = [
   },
 },
 {
-  background: "/images/星湖/2-surface.jpg",
+  background: "/images/星湖/2-surface.png",
   soundEffect: "風鈴",
   conversation: {
     speaker: SpeakerType.XI,
@@ -919,20 +919,242 @@ export const scenes: IScene[] = [
   background: "/images/星湖/2-lake.jpg",
   foreground: "/images/character.png",
   soundEffect: "風鈴",
-  description: "嘗試了幾次，但大部分的星星在撈起來前就消散了",
+  description: "曦流一如往常的平靜，好像她並不像我一樣情緒因為這些星星而波動嘗試了幾次，但大部分的星星在撈起來前就消散了",
   conversation: {
-    speaker: SpeakerType.PLAYER,
-    content: "……",
+    speaker: SpeakerType.XI,
+    content: "還要繼續撈嗎？",
   },
 },
 {
   background: "/images/星湖/2-lake.jpg",
   foreground: "/images/character.png",
   soundEffect: "風鈴",
-  description: "嘗試了幾次，但大部分的星星在撈起來前就消散了",
   conversation: {
     speaker: SpeakerType.PLAYER,
-    content: "還要繼續撈嗎？",
+    content: "這些星星，一定代表著什麼……也許是我的願望，也許是我的夢想。",
   },
+},
+{
+  background: "/images/星湖/2-lake.jpg",
+  foreground: "/images/character.png",
+  soundEffect: "風鈴",
+  conversation: {
+    speaker: SpeakerType.PLAYER,
+    content: "可是……為什麼有些星星在我努力想觸及時就消失了？",
+  },
+},
+{
+  background: "/images/星湖/2-lake.jpg",
+  foreground: "/images/character.png",
+  soundEffect: "風鈴",
+  description: "曦流放下槳，迎向我的目光多了認真與探究",
+  conversation: {
+    speaker: SpeakerType.XI,
+    content: "為什麼你想得到這些星星？",
+  },
+},
+{
+  background: "/images/星湖/2-lake.jpg",
+  foreground: "/images/character.png",
+  soundEffect: "風鈴",
+  conversation: {
+    speaker: SpeakerType.PLAYER,
+    content: "因為它們很美……",
+  },
+},
+{
+  background: "/images/星湖/2-lake.jpg",
+  foreground: "/images/character.png",
+  soundEffect: "風鈴",
+  description: "曦流捧起星星消失處的湖水，上面似乎有些浮動的光點，逐漸匯聚成一幅畫面",
+  conversation: {
+    speaker: SpeakerType.XI,
+    content: "即使沒有被握在手裡，也不妨礙它們的美麗吧？",
+  },
+},
+{
+  background: "/images/星湖/2-surface.png",
+  soundEffect: "風鈴",
+  description: "那時候第一次有了渴望靠自己的努力來獲得些什麼的意念，每天都覺得這樣的自己很帥，獲得了熱血玩社團的青春回憶",
+  conversation: {
+    speaker: SpeakerType.PLAYER,
+    content: "這畫面是中學吉他社的團練活動吧？對了，我曾經因為很想擔任幹部，而度過一段每天練吉他的時期",
+  },
+},
+{
+  background: "/images/星湖/2-surface.png",
+  soundEffect: "風鈴",
+  description: "我還沉浸在剛拾回的上一段回憶裡，直到水波晃動，水面的光暈重構成另一幅畫面",
+  conversation: {
+    speaker: SpeakerType.XI,
+    content: "想起什麼了嗎？",
+  },
+},
+{
+  background: "/images/星湖/2-surface.png",
+  soundEffect: "風鈴",
+  description: "雖然從來沒有買到演唱會的票，但我還是買來專輯放在電腦桌上，只要工作累了看一眼，我就可以重新充滿力量",
+  conversation: {
+    speaker: SpeakerType.PLAYER,
+    content: "這是我最喜歡的樂團，它們的歌陪我度過了無數個睡不著的夜晚，雖然通常都是因為聽太嗨才睡不著",
+  },
+},
+{
+  background: "/images/星湖/2-lake.jpg",
+  foreground: "/images/character.png",
+  soundEffect: "風鈴",
+  description: "滿湖星光映在曦流的眼底，此時的她，臉上竟然掛著見面以來從未有過的清淺笑意",
+  conversation: {
+    speaker: SpeakerType.XI,
+    content: "是你讓這些星星可以持續發光，而不只是一瞬綻放而已。\n我覺得或許你本身才是發光的本質。",
+  },
+},
+{
+  background: "/images/星湖/2-lake.jpg",
+  foreground: "/images/character.png",
+  soundEffect: "風鈴",
+  description: "原來撈星星只是一場與星光玩的遊戲，沒有目的，好玩就好",
+  conversation: {
+    speaker: SpeakerType.PLAYER,
+    content: "這些光，我一直都擁有著嗎？即使沒有握在手裡，我仍然為它的美好所感動",
+  },
+},
+{
+  background: "/images/星湖/2-lake.jpg",
+  foreground: "/images/character.png",
+  soundEffect: "風鈴",
+  conversation: {
+    speaker: SpeakerType.XI,
+    content: "還想繼續撈嗎？還是放下槳，一起看星星？",
+  },
+  buttons: [
+    { content: "那就繼續這場追逐光的遊戲吧", jumpPage: 1 },
+    { content: "我想讓水帶我漂流，享受和星星的偶遇", jumpPage: 1 },
+  ],
+},
+{
+  background: "/images/星湖/2-lake.jpg",
+  foreground: "/images/character.png",
+  soundEffect: "風鈴",
+  description: "曦流再次挽袖探向星輝落下的湖面",
+  conversation: {
+    speaker: SpeakerType.XI,
+    content: "水很靜，你也變得安靜了。",
+  },
+},
+{
+  background: "/images/星湖/2-surface.png",
+  foreground: "/images/character.png",
+  soundEffect: "風鈴",
+  description: "我也將手伸進這孕育星光的湖水中，想細細感受一番；觸到那股清洌的這一瞬間，周圍再次被熟悉的白光籠罩",
+},
+{
+  background: "bg-white",
+  conversation: {
+    speaker: SpeakerType.PLAYER,
+    content: "該回去了啊…",
+  },
+},
+
+// ------------------------------------------------------------------------------------------------
+
+{
+  background: "/images/展覽館/展品區.jpg",
+  foreground: "/images/character.png",
+  soundEffect: "柔和緩慢的鋼琴",
+  description: "熟悉的展覽館再次映入眼簾，然而腳下傳來的觸感卻與記憶中的硬地板。我們踩在湖水與浮島交錯的濕地上，夜幕般的空間中，星星不僅點綴了湖面，也輕輕漂浮在空中，如同尚未落定的願望。",
+},
+{
+  background: "/images/展覽館/展品區.jpg",
+  foreground: "/images/character.png",
+  soundEffect: "柔和緩慢的鋼琴",
+  description: "展櫃裡悄然多了一件新展品，散發著溫柔的微光，仿若剛從湖心撈起的星星。",
+  conversation: {
+    speaker: SpeakerType.PLAYER,
+    content: "……它們留在這裡了。",
+  },
+},
+{
+  background: "/images/展覽館/展品區.jpg",
+  foreground: "/images/character.png",
+  soundEffect: "柔和緩慢的鋼琴",
+  description: "我伸手碰觸一顆懸浮的星星，微光順著指尖流轉，化作細碎的波紋擴散開來。\n沒有多說什麼，我收回手轉身踏入展館深處。",
+  conversation: {
+    speaker: SpeakerType.XI,
+    content: "星星落下了，明天也會升起。",
+  },
+},
+{
+  background: "/images/展覽館/gallery-pink-orig.png",
+  foreground: "/images/character.png",
+  soundEffect: "柔和緩慢的鋼琴",
+  description: "就在這時，另一座拱門前的金屬牌閃爍了一下，嶄新的文字悄然浮現",
+  exploreButton: {
+    content: "靠近查看",
+    position: {
+      x: 70,
+      y: 70,
+    },
+  },
+},
+{
+  background: "/images/展覽館/gallery-pink-orig.png",
+  soundEffect: "柔和緩慢的鋼琴",
+  description: "「終點遙遠，旅途卻未曾空手而歸。\n裂縫間的花，仍在光裡盛放。\n你，願意看看它們嗎？」",
+},
+{
+  background: "/images/展覽館/簾幕開.jpg",
+  foreground: "/images/character.png",
+  soundEffect: "柔和緩慢的鋼琴",
+  description: "讀完後，簾幕無聲地向兩側揭開，露出門後的空間——",
+  exploreButton: {
+    content: "進入空間",
+    position: {
+      x: 70,
+      y: 70,
+    },
+  },
+},
+{
+  background: "/images/展覽館/展品區.jpg",
+  foreground: "/images/character.png",
+  soundEffect: "柔和緩慢的鋼琴",
+  description: "不出意外的，裡面是個空蕩蕩的小展間，只有一扇門和一個空的展櫃",
+  conversation: {
+    speaker: SpeakerType.PLAYER,
+    content: "不知道這扇門背後又會是什麼？",
+  },
+},
+{
+  background: "/images/展覽館/展品區.jpg",
+  foreground: "/images/character.png",
+  soundEffect: "柔和緩慢的鋼琴",
+  description: "門的縫隙中透出柔和的虹光，微微閃爍，如同等待著我的決定",
+  buttons: [
+      { content: "我準備好了。", jumpPage: 1 },
+      { content: "這果然還是夢一場……", jumpPage: 2 },
+    ],
+},
+{
+  background: "/images/展覽館/展品區.jpg",
+  foreground: "/images/character.png",
+  soundEffect: "柔和緩慢的鋼琴",
+  conversation: {
+    speaker: SpeakerType.XI,
+    content: "很好，這趟旅程才剛開始，讓我們走吧。",
+  },
+},
+{
+  background: "/images/展覽館/展品區.jpg",
+  foreground: "/images/character.png",
+  soundEffect: "柔和緩慢的鋼琴",
+  conversation: {
+    speaker: SpeakerType.XI,
+    content: "不過這也不影響它是真的發生過，你覺得呢？",
+  },
+},
+{
+  background: "bg-[#A25A30]",
+  description: "下一站：盛放的列車",
 },
 ];
