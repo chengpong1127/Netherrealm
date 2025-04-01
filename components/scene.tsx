@@ -127,14 +127,18 @@ function Description({ content }: { content: string }) {
         border border-white/30
         transition-shadow duration-300"
       >
-        <motion.p
-          animate={{ opacity: 1 }}
-          className="text-center font-bold"
-          initial={{ opacity: 0 }}
-          transition={{ duration: 1 }}
-        >
-          {content}
-        </motion.p>
+        <AnimatePresence mode="wait">
+          <motion.p
+            key={content}
+            animate={{ opacity: 1 }}
+            className="text-center font-bold"
+            exit={{ opacity: 0 }}
+            initial={{ opacity: 0 }}
+            transition={{ duration: 0.5 }}
+          >
+            {content}
+          </motion.p>
+        </AnimatePresence>
       </div>
     </div>
   );
