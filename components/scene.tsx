@@ -15,6 +15,7 @@ export function Scene({
   onChangeScene?: (delta: number) => void;
 }) {
   const isImagePath = scene.background.includes("/");
+  const hasButtons: boolean = !!scene.buttons || !!scene.exploreButton;
 
   return (
     // eslint-disable-next-line jsx-a11y/no-static-element-interactions
@@ -23,10 +24,10 @@ export function Scene({
         "relative w-full h-full overflow-hidden",
         !isImagePath && scene.background,
       )}
-      onClick={() => !scene.buttons && onChangeScene?.(1)}
+      onClick={() => !hasButtons && onChangeScene?.(scene.jumpPage ?? 1)}
       onKeyDown={(e) => {
-        if ((e.key === "Enter" || e.key === " ") && !scene.buttons) {
-          onChangeScene?.(1);
+        if ((e.key === "Enter" || e.key === " ") && !hasButtons) {
+          onChangeScene?.(scene.jumpPage ?? 1);
         }
       }}
     >
