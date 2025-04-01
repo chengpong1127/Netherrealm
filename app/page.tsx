@@ -14,11 +14,13 @@ export default function Home() {
 
   return (
     <section className="w-full h-full">
-      <PageNavigator
-        currentPage={currentSceneIndex}
-        totalPages={scenes.length}
-        onPageChange={setCurrentSceneIndex}
-      />
+      {process.env.NODE_ENV === "development" && (
+        <PageNavigator
+          currentPage={currentSceneIndex}
+          totalPages={scenes.length}
+          onPageChange={setCurrentSceneIndex}
+        />
+      )}
       <Scene
         scene={scenes[currentSceneIndex]}
         onChangeScene={handleNextScene}
