@@ -51,15 +51,21 @@ export function Scene({
 
       {/* Foreground */}
       {scene.foreground && (
-        <Image
-          alt="Foreground"
-          className="absolute left-0 bottom-0 translate-y-[30%] h-[50%] w-[30%]"
-          height={600}
-          layout="intrinsic"
-          objectFit="contain"
-          src={scene.foreground}
-          width={600}
-        />
+        <motion.div
+          animate={{ opacity: 1 }}
+          initial={{ opacity: 0 }}
+          transition={{ duration: 1 }}
+        >
+          <Image
+            alt="Foreground"
+            className="absolute left-0 bottom-0 translate-y-[30%] h-[50%] w-[30%]"
+            height={600}
+            layout="intrinsic"
+            objectFit="contain"
+            src={scene.foreground}
+            width={600}
+          />
+        </motion.div>
       )}
       {scene.description && <Description content={scene.description} />}
 
