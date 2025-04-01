@@ -20,7 +20,7 @@ export function Scene({
 
   return (
     <button
-      className="relative w-full h-full overflow-hidden select-none whitespace-pre-line cursor-default"
+      className="relative w-full h-full overflow-hidden select-none whitespace-pre-line cursor-default text-medium"
       onClick={() => !hasButtons && onChangeScene?.(scene.jumpPage ?? 1)}
     >
       <AnimatePresence
@@ -72,7 +72,7 @@ export function Scene({
       )}
 
       {scene.buttons && (
-        <div className="absolute top-1/2 -right-6 transform -translate-y-1/2 flex flex-col space-y-8 w-1/5">
+        <div className="absolute top-1/2 -right-6 transform -translate-y-1/2 flex flex-col space-y-8 w-[30%]">
           {scene.buttons.map(({ content, jumpPage }, index) => (
             <Button
               key={index}
@@ -103,10 +103,10 @@ function Conversation({
   const textColor = getSpeakerColor(speaker);
 
   return (
-    <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-60 h-1/6 flex flex-col backdrop-blur-md text-left text-2xl">
-      <div className="relative left-80 top-10">
+    <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-60 h-1/6 flex flex-col backdrop-blur-md text-left">
+      <div className="relative left-[20%] top-[8%]">
         <h1 className={clsx("font-extrabold", textColor)}>{speaker}</h1>
-        <Divider className="mt-2 mb-5 bg-gray-500" />
+        <Divider className="mt-1 mb-3 bg-gray-500" />
         <p className={clsx("font-bold", textColor)}>{displayedText}</p>
       </div>
     </div>
@@ -123,7 +123,7 @@ function Description({ content }: { content: string }) {
         border border-white/30
         transition-shadow duration-300"
       >
-        <p className="text-2xl text-center font-bold">{displayedText}</p>
+        <p className="text-center font-bold">{displayedText}</p>
       </div>
     </div>
   );
@@ -146,7 +146,7 @@ function Button({
         transition-all duration-300"
       onClick={onClick}
     >
-      <p className="text-2xl text-left px-4 font-bold">{content}</p>
+      <p className="text-left px-4 font-bold">{content}</p>
     </button>
   );
 }
@@ -173,7 +173,7 @@ function ExploreButton({
       }}
       onClick={onClick}
     >
-      <p className="text-lg text-center">{content}</p>
+      <p className="text-center">{content}</p>
     </button>
   );
 }
