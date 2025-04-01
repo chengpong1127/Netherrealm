@@ -1,8 +1,9 @@
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-  name: "Next.js + HeroUI",
-  description: "Make beautiful websites regardless of your design experience.",
+  name: "Netherrealm",
+  description:
+    "在記憶與夢境交錯的旅途中，尋找遺失的自己，直面生命的選擇與告別。",
   navItems: [
     {
       label: "Home",
