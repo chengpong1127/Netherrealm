@@ -20,7 +20,7 @@ export function Scene({
 
   return (
     <button
-      className="relative w-full h-full overflow-hidden select-none whitespace-pre-line cursor-default text-medium"
+      className="relative w-full h-full overflow-hidden select-none whitespace-pre-line cursor-default text-base sm:text-lg md:text-lg lg:text-xl 2xl:text-3xl"
       onClick={() => !hasButtons && onChangeScene?.(scene.jumpPage ?? 1)}
     >
       <AnimatePresence
@@ -105,11 +105,11 @@ function Conversation({
   speaker: SpeakerType;
   content: string;
 }) {
-  const displayedText = useTypewriterEffect(content);
+  const displayedText = useTypewriterEffect(content, 30);
   const textColor = getSpeakerColor(speaker);
 
   return (
-    <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-60 h-1/6 flex flex-col backdrop-blur-md text-left">
+    <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-60 h-1/6 flex flex-col backdrop-blur-md text-left leading-relaxed">
       <div className="relative left-[20%] top-[8%]">
         <h1 className={clsx("font-extrabold", textColor)}>{speaker}</h1>
         <Divider className="mt-1 mb-3 bg-gray-500" />
@@ -121,7 +121,7 @@ function Conversation({
 
 function Description({ content }: { content: string }) {
   return (
-    <div className="absolute inset-0 flex items-center justify-center transform translate-y-[15%]">
+    <div className="absolute inset-0 flex items-center justify-center transform translate-y-[15%] leading-relaxed">
       <div
         className="bg-black bg-opacity-20 text-white p-8 rounded-full shadow-lg backdrop-blur-sm
         border border-white/30
@@ -178,10 +178,11 @@ function ExploreButton({
   return (
     <button
       className="absolute text-white px-4 py-2 rounded-full backdrop-blur-sm bg-black bg-opacity-40
-      border-4 border-double h-32 w-32
+      border-4 border-double aspect-square
       hover:shadow-[0_0_20px_rgba(255,255,255,0.7)]
-      transition-all duration-300"
+      transition-all duration-300 leading-relaxed text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl"
       style={{
+        width: "10%",
         left: `${position.x}%`,
         top: `${position.y}%`,
         transform: "translate(-50%, -50%)",
