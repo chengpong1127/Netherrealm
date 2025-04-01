@@ -53,7 +53,7 @@ export function Scene({
       {scene.foreground && (
         <Image
           alt="Foreground"
-          className="absolute left-0 bottom-0 translate-y-1/4"
+          className="absolute left-0 bottom-0 translate-y-[30%] h-[50%] w-[30%]"
           height={600}
           layout="intrinsic"
           objectFit="contain"
