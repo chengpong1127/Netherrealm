@@ -103,15 +103,11 @@ function Conversation({
   const textColor = getSpeakerColor(speaker);
 
   return (
-    <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-60 h-1/6 flex flex-col backdrop-blur-md">
+    <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-60 h-1/6 flex flex-col backdrop-blur-md text-left text-2xl">
       <div className="relative left-80 top-10">
-        <h1 className={clsx("text-2xl font-extrabold", textColor)}>
-          {speaker}
-        </h1>
+        <h1 className={clsx("font-extrabold", textColor)}>{speaker}</h1>
         <Divider className="mt-2 mb-5 bg-gray-500" />
-        <p className={clsx("text-2xl text-left font-bold", textColor)}>
-          {displayedText}
-        </p>
+        <p className={clsx("font-bold", textColor)}>{displayedText}</p>
       </div>
     </div>
   );
