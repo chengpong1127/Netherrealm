@@ -1410,7 +1410,7 @@ export const scenes: IScene[] = [
 
   {
     background: "/images/審判/審判殿堂.jpeg",
-    backgroundMusic: "/soundEffects/Silentium Zambolino.mp3",
+    backgroundMusic: "/soundEffects/Silence Background Music.mp3",
     description:
       "踏入了一座寧靜的石殿，或許「殿堂」並非最準確的形容。\n它沒有莊嚴的壁畫，取而代之的，是一片矗立於石間的參天古樹。樹根沿著石縫盤繞，藤蔓垂落，空氣中瀰漫著微涼的潮氣與淡淡的木香。",
     conversation: {
