@@ -1774,12 +1774,12 @@ export const scenes: IScene[] = [
       "這種感覺算是一種遺憾嗎？\n但心裡確實空了一塊，像有什麼無聲地塌陷下去。",
   },
   {
-    background: "/images/展覽館/gallery-pink-orig.png",
+    background: "/images/展覽館/展品-pink.png",
     description:
       "收回視線，轉身踏入展覽館大廳。\n……不知不覺間，這裡變了；展區變得更加廣闊，原本空曠的展櫃不知何時多了許多展品；\n那些，是我的記憶嗎？",
   },
   {
-    background: "/images/展覽館/gallery-green-orig.png",
+    background: "/images/展覽館/展品區-green.png",
     description:
       "靜靜地走過展覽館，目光掃過這些變化。\n從旅程開始到現在，我曾經疑惑過這間展覽館到底是什麼，為什麼它總是隨著旅程而變化。",
     conversation: {
@@ -1789,7 +1789,7 @@ export const scenes: IScene[] = [
     },
   },
   {
-    background: "/images/展覽館/gallery-brown-orig.png",
+    background: "/images/展覽館/展品區-brown.png",
     conversation: {
       speaker: SpeakerType.PLAYER,
       content:
