@@ -256,13 +256,13 @@ export const scenes: IScene[] = [
     description: "讀完後，簾幕無聲地向兩側揭開，露出門後的空間——",
   },
   {
-    background: "/images/展覽館/展品區.jpg",
+    background: "/images/展覽館/展品區.png",
     foreground: "/images/character.png",
     description:
       "看起來像一個小展間，展櫃和畫框都是空的，似乎等待著什麼被寫入；\n展櫃後方有一扇門",
   },
   {
-    background: "/images/展覽館/展品區.jpg",
+    background: "/images/展覽館/展品區.png",
     foreground: "/images/character.png",
     conversation: {
       speaker: SpeakerType.XI,
@@ -270,7 +270,7 @@ export const scenes: IScene[] = [
     },
   },
   {
-    background: "/images/展覽館/展品區.jpg",
+    background: "/images/展覽館/展品區.png",
     foreground: "/images/character.png",
     conversation: {
       speaker: SpeakerType.PLAYER,
@@ -278,7 +278,7 @@ export const scenes: IScene[] = [
     },
   },
   {
-    background: "/images/展覽館/展品區.jpg",
+    background: "/images/展覽館/展品區.png",
     foreground: "/images/character.png",
     conversation: {
       speaker: SpeakerType.XI,
@@ -286,7 +286,7 @@ export const scenes: IScene[] = [
     },
   },
   {
-    background: "/images/展覽館/展品區.jpg",
+    background: "/images/展覽館/展品區.png",
     foreground: "/images/character.png",
     conversation: {
       speaker: SpeakerType.PLAYER,
@@ -295,7 +295,7 @@ export const scenes: IScene[] = [
     description: "語氣些許淡然，回應超級含糊……",
   },
   {
-    background: "/images/展覽館/展品區.jpg",
+    background: "/images/展覽館/展品區.png",
     foreground: "/images/character.png",
     conversation: {
       speaker: SpeakerType.PLAYER,
@@ -303,7 +303,7 @@ export const scenes: IScene[] = [
     },
   },
   {
-    background: "/images/展覽館/展品區.jpg",
+    background: "/images/展覽館/展品區.png",
     foreground: "/images/character.png",
     conversation: {
       speaker: SpeakerType.XI,
@@ -317,7 +317,7 @@ export const scenes: IScene[] = [
   },
   {
     jumpPage: 2,
-    background: "/images/展覽館/展品區.jpg",
+    background: "/images/展覽館/展品區.png",
     foreground: "/images/character.png",
     conversation: {
       speaker: SpeakerType.XI,
@@ -325,7 +325,7 @@ export const scenes: IScene[] = [
     },
   },
   {
-    background: "/images/展覽館/展品區.jpg",
+    background: "/images/展覽館/展品區.png",
     foreground: "/images/character.png",
     conversation: {
       speaker: SpeakerType.XI,
@@ -626,7 +626,7 @@ export const scenes: IScene[] = [
   // ---------------------------------------------------------------------------------------------
 
   {
-    background: "/images/展覽館/展品區.jpg",
+    background: "/images/展覽館/展區-pink.png",
     foreground: "/images/character.png",
     backgroundMusic: "/soundEffects/Mystery Unveiled.mp3",
     description:
@@ -637,7 +637,7 @@ export const scenes: IScene[] = [
     },
   },
   {
-    background: "/images/展覽館/展品區.jpg",
+    background: "/images/展覽館/展區-pink.png",
     foreground: "/images/character.png",
     description:
       "原本空無一物的展櫃，此刻靜靜擺放著一件嶄新的藏品，款式跟剛才溪流給的紀念品有些異曲同工",
@@ -647,7 +647,7 @@ export const scenes: IScene[] = [
     },
   },
   {
-    background: "/images/展覽館/展品區.jpg",
+    background: "/images/展覽館/展區-pink.png",
     foreground: "/images/character.png",
     description:
       "曦流像預想中的一樣並沒有回應，但一雙帶著敘事的眼眸瞥向展覽館的另一側，我也看了過去",
@@ -669,7 +669,7 @@ export const scenes: IScene[] = [
     },
   },
   {
-    background: "/images/展覽館/gallery-pink-orig.png",
+    background: "/images/展覽館/gallery-green-orig.png",
     description:
       "「有些星星落入掌心，\n有些則隨波閃爍。\n但它們點亮夜空的那一刻，已經足夠美麗。」",
   },
@@ -686,7 +686,7 @@ export const scenes: IScene[] = [
     },
   },
   {
-    background: "/images/展覽館/展品區.jpg",
+    background: "/images/展覽館/展品區.png",
     foreground: "/images/character.png",
     description:
       "跟剛才初次進入彩虹路與小屋的小展間一樣，空蕩蕩的，只有一扇門和空展櫃",
@@ -696,7 +696,7 @@ export const scenes: IScene[] = [
     },
   },
   {
-    background: "/images/展覽館/展品區.jpg",
+    background: "/images/展覽館/展品區.png",
     foreground: "/images/character.png",
     conversation: {
       speaker: SpeakerType.XI,
@@ -710,7 +710,7 @@ export const scenes: IScene[] = [
   },
   {
     jumpPage: 2,
-    background: "/images/展覽館/展品區.jpg",
+    background: "/images/展覽館/展品區.png",
     foreground: "/images/character.png",
     conversation: {
       speaker: SpeakerType.XI,
@@ -718,7 +718,7 @@ export const scenes: IScene[] = [
     },
   },
   {
-    background: "/images/展覽館/展品區.jpg",
+    background: "/images/展覽館/展品區.png",
     foreground: "/images/character.png",
     conversation: {
       speaker: SpeakerType.XI,
@@ -998,14 +998,14 @@ export const scenes: IScene[] = [
   // ------------------------------------------------------------------------------------------------
 
   {
-    background: "/images/展覽館/展品區.jpg",
+    background: "/images/展覽館/展品-green.png",
     foreground: "/images/character.png",
     backgroundMusic: "/soundEffects/Mystery Unveiled.mp3",
     description:
       "熟悉的展覽館再次映入眼簾，然而腳下傳來的觸感卻與記憶中的硬地板。\n我們踩在湖水與浮島交錯的濕地上，夜幕般的空間中，星星不僅點綴了湖面，也輕輕漂浮在空中，如同尚未落定的願望。",
   },
   {
-    background: "/images/展覽館/展品區.jpg",
+    background: "/images/展覽館/展品-green.png",
     foreground: "/images/character.png",
     description:
       "展櫃裡悄然多了一件新展品，散發著溫柔的微光，仿若剛從湖心撈起的星星。",
@@ -1015,7 +1015,7 @@ export const scenes: IScene[] = [
     },
   },
   {
-    background: "/images/展覽館/展品區.jpg",
+    background: "/images/展覽館/展品-green.png",
     foreground: "/images/character.png",
     description:
       "我伸手碰觸一顆懸浮的星星，微光順著指尖流轉，化作細碎的波紋擴散開來。\n沒有多說什麼，我收回手轉身踏入展館深處。",
@@ -1037,7 +1037,7 @@ export const scenes: IScene[] = [
     },
   },
   {
-    background: "/images/展覽館/gallery-pink-orig.png",
+    background: "/images/展覽館/gallery-brown-orig.png",
     description:
       "「終點遙遠，旅途卻未曾空手而歸。\n裂縫間的花，仍在光裡盛放。\n你，願意看看它們嗎？」",
   },
@@ -1054,7 +1054,7 @@ export const scenes: IScene[] = [
     },
   },
   {
-    background: "/images/展覽館/展品區.jpg",
+    background: "/images/展覽館/展品區.png",
     foreground: "/images/character.png",
     description: "不出意外的，裡面是個空蕩蕩的小展間，只有一扇門和一個空的展櫃",
     conversation: {
@@ -1063,7 +1063,7 @@ export const scenes: IScene[] = [
     },
   },
   {
-    background: "/images/展覽館/展品區.jpg",
+    background: "/images/展覽館/展品區.png",
     foreground: "/images/character.png",
     description: "門的縫隙中透出柔和的虹光，微微閃爍，如同等待著我的決定",
     buttons: [
@@ -1073,7 +1073,7 @@ export const scenes: IScene[] = [
   },
   {
     jumpPage: 2,
-    background: "/images/展覽館/展品區.jpg",
+    background: "/images/展覽館/展品區.png",
     foreground: "/images/character.png",
     conversation: {
       speaker: SpeakerType.XI,
@@ -1081,7 +1081,7 @@ export const scenes: IScene[] = [
     },
   },
   {
-    background: "/images/展覽館/展品區.jpg",
+    background: "/images/展覽館/展品區.png",
     foreground: "/images/character.png",
     conversation: {
       speaker: SpeakerType.XI,
@@ -1295,14 +1295,14 @@ export const scenes: IScene[] = [
   // ---------------------------------------------------------------------------------
 
   {
-    background: "/images/展覽館/展品區.jpg",
+    background: "/images/展覽館/展品-brown.png",
     foreground: "/images/character.png",
     backgroundMusic: "/soundEffects/Mystery Unveiled.mp3",
     description:
       "回到了展覽館。\n曾經封閉的門，如今成為一節靜止的火車車廂，斑駁的車體被野花覆蓋，搖曳的花影隨微風輕輕起伏。車窗映照出藍天與遼闊的綠地，彷彿時間靜止於此",
   },
   {
-    background: "/images/展覽館/展品區.jpg",
+    background: "/images/展覽館/展品-brown.png",
     foreground: "/images/character.png",
     description:
       "展櫃裡的花束跟剛才曦流遞給我的一模一樣。似乎每次被傳送回來後，展覽館都會把我們剛才的經歷納入空間裡？",
@@ -1312,7 +1312,7 @@ export const scenes: IScene[] = [
     },
   },
   {
-    background: "/images/展覽館/展品區.jpg",
+    background: "/images/展覽館/展品-brown.png",
     foreground: "/images/character.png",
     description:
       "我現在幾乎可以確定，我在這座特別的展覽管裡經歷的一切，都是出於我的認知與我曾經的記憶。或許我可以在這裡找回我自己？。",
@@ -1335,7 +1335,7 @@ export const scenes: IScene[] = [
     },
   },
   {
-    background: "/images/展覽館/gallery-pink-orig.png",
+    background: "/images/展覽館/gallery-gray-orig.png",
     description:
       "「時光靜止於石殿，古樹見證無聲的來去。\n若記憶如落葉，層層覆蓋腳下的路，\n你可願拾起一片，凝視它的紋理？」",
   },
@@ -1370,7 +1370,7 @@ export const scenes: IScene[] = [
     },
   },
   {
-    background: "/images/展覽館/展品區.jpg",
+    background: "/images/展覽館/展品區.png",
     foreground: "/images/character.png",
     description:
       "簾幕後依如往常只有一扇門和空展櫃。\n門的縫隙中透出柔和的虹光，微微閃爍，如同等待著我的決定",
@@ -1385,7 +1385,7 @@ export const scenes: IScene[] = [
   },
   {
     jumpPage: 2,
-    background: "/images/展覽館/展品區.jpg",
+    background: "/images/展覽館/展品區.png",
     foreground: "/images/character.png",
     conversation: {
       speaker: SpeakerType.XI,
@@ -1393,7 +1393,7 @@ export const scenes: IScene[] = [
     },
   },
   {
-    background: "/images/展覽館/展品區.jpg",
+    background: "/images/展覽館/展品區.png",
     foreground: "/images/character.png",
     conversation: {
       speaker: SpeakerType.XI,
@@ -1753,33 +1753,33 @@ export const scenes: IScene[] = [
   // --------------------------------------------------------------------------------
 
   {
-    background: "/images/展覽館/展品區.jpg",
+    background: "/images/展覽館/展品-gray.png",
     backgroundMusic: "/soundEffects/Mystery Unveiled.mp3",
     description:
       "回來了。高聳的樹木在微光下投下層層疊疊的陰影，石柱零星佇立在林間，彷彿見證著一場無聲的告別。\n藍、綠、粉的落葉鋪滿了地面，隨著微風輕輕翻動，像是時光殘留下的片語斷章。",
   },
   {
-    background: "/images/展覽館/展品區.jpg",
+    background: "/images/展覽館/展品-gray.png",
     description:
       "很寂靜的感覺。……接下來的路，需要由我自己走了吧？\n像是在問自己，也像是在問那片林間，問那個已經不在身邊的人。",
   },
   {
-    background: "/images/展覽館/展品區.jpg",
+    background: "/images/展覽館/展品-gray.png",
     description:
       "明明剛才她還在這裡，卻像是從來沒有存在過一樣。\n我試圖回憶她的聲音、她的目光、她那些平淡卻真切的話語，\n可這一切如今變得遙遠，像是留在夢境的邊緣，快要被時間沖散了。",
   },
   {
-    background: "/images/展覽館/展品區.jpg",
+    background: "/images/展覽館/展品-gray.png",
     description:
       "這種感覺算是一種遺憾嗎？\n但心裡確實空了一塊，像有什麼無聲地塌陷下去。",
   },
   {
-    background: "/images/展覽館/展品區.jpg",
+    background: "/images/展覽館/gallery-pink-orig.png",
     description:
       "收回視線，轉身踏入展覽館大廳。\n……不知不覺間，這裡變了；展區變得更加廣闊，原本空曠的展櫃不知何時多了許多展品；\n那些，是我的記憶嗎？",
   },
   {
-    background: "/images/展覽館/展品區.jpg",
+    background: "/images/展覽館/gallery-green-orig.png",
     description:
       "靜靜地走過展覽館，目光掃過這些變化。\n從旅程開始到現在，我曾經疑惑過這間展覽館到底是什麼，為什麼它總是隨著旅程而變化。",
     conversation: {
@@ -1789,7 +1789,7 @@ export const scenes: IScene[] = [
     },
   },
   {
-    background: "/images/展覽館/展品區.jpg",
+    background: "/images/展覽館/gallery-brown-orig.png",
     conversation: {
       speaker: SpeakerType.PLAYER,
       content:
@@ -1797,7 +1797,7 @@ export const scenes: IScene[] = [
     },
   },
   {
-    background: "/images/展覽館/展品區.jpg",
+    background: "/images/展覽館/展品區.png",
     description:
       "停下腳步，展覽館的中央出現一道門。\n它沒有任何標示，也沒有任何提示，只是一扇靜靜等候的門。",
     conversation: {
@@ -1806,7 +1806,7 @@ export const scenes: IScene[] = [
     },
   },
   {
-    background: "/images/展覽館/展品區.jpg",
+    background: "/images/展覽館/展品區.png",
     description:
       "準備好離開這個與自己內心相連的地方，回到真正的生命之中了嗎？\n至少這一次，我做了確切的選擇",
     buttons: [{ content: "開門離開", jumpPage: 1 }],
@@ -2149,12 +2149,12 @@ export const scenes: IScene[] = [
   // ----------------------------------------------------------------------------------
 
   {
-    background: "/images/道別/boat-far.png",
+    background: "/images/道別/boat-far.jpg",
     description:
       "夕陽將我的身影拉得修長，波光粼粼的水面反射出我的剪影，\n而在漣漪的折射間，彷彿映出另一個世界的影子，但卻不清晰。",
   },
   {
-    background: "/images/道別/boat-far.png",
+    background: "/images/道別/boat-far.jpg",
     description:
       "隨著船隨波漂遠，金紅色的餘暉逐漸籠罩整個畫面，光線越來越強，最終模糊成一片暖金色的光。",
   },
@@ -2175,5 +2175,8 @@ export const scenes: IScene[] = [
       { content: "……無論如何，這一次，我知道該往哪裡去了。", jumpPage: 1 },
     ],
     backgroundMusic: "stop",
+  },
+  {
+    background: "bg-white",
   },
 ];
