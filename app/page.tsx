@@ -9,7 +9,14 @@ export default function Home() {
   const [currentSceneIndex, setCurrentSceneIndex] = useState(0);
 
   const handleNextScene = (delta: number) => {
-    setCurrentSceneIndex((prevIndex) => (prevIndex + delta) % scenes.length);
+    setCurrentSceneIndex((prevIndex) => {
+      const nextIndex = prevIndex + delta;
+
+      if (nextIndex < 0) return 0;
+      if (nextIndex >= scenes.length) return scenes.length - 1;
+
+      return nextIndex;
+    });
   };
 
   return (
