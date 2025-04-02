@@ -2,6 +2,7 @@ import Image from "next/image";
 import clsx from "clsx";
 import { Divider } from "@heroui/divider";
 import { motion, AnimatePresence } from "framer-motion"; // Add AnimatePresence import
+import { useEffect, useRef } from "react";
 
 import { useTypewriterEffect } from "@/hooks/useTypewriterEffect";
 import IScene from "@/types/scene";
@@ -17,9 +18,50 @@ export function Scene({
 }) {
   const isImagePath = scene.background.includes("/");
   const hasButtons: boolean = !!scene.buttons || !!scene.exploreButton;
+  const backgroundMusicAudioRef = useRef<HTMLAudioElement | null>(null);
+  const soundEffectRef = useRef<HTMLAudioElement | null>(null);
+
+  useEffect(() => {
+    const audioElement = backgroundMusicAudioRef.current;
+
+    if (audioElement) {
+      if (scene.backgroundMusic && scene.backgroundMusic !== "stop") {
+        audioElement.src = scene.backgroundMusic;
+        audioElement.volume = 1;
+        audioElement.play();
+      } else if (scene.backgroundMusic === "stop") {
+        const fadeOutInterval = setInterval(() => {
+          if (audioElement.volume > 0.1) {
+            audioElement.volume = Math.max(0, audioElement.volume - 0.1);
+          } else {
+            audioElement.pause();
+            audioElement.currentTime = 0;
+            clearInterval(fadeOutInterval);
+          }
+        }, 300);
+      }
+    }
+
+    const soundEffectElement = soundEffectRef.current;
+
+    if (
+      soundEffectElement &&
+      scene.soundEffect &&
+      scene.soundEffect.includes("/")
+    ) {
+      if (scene.soundEffect) {
+        soundEffectElement.src = scene.soundEffect;
+        soundEffectElement.volume = 1;
+        soundEffectElement.play();
+      }
+    }
+
+    return;
+  }, [scene.backgroundMusic, scene.soundEffect]);
 
   return (
-    <button
+    // eslint-disable-next-line jsx-a11y/click-events-have-key-events, jsx-a11y/no-static-element-interactions
+    <div
       className="relative w-full h-full overflow-hidden select-none whitespace-pre-line cursor-default text-base sm:text-lg md:text-lg lg:text-xl 2xl:text-3xl"
       onClick={() => !hasButtons && onChangeScene?.(scene.jumpPage ?? 1)}
     >
@@ -38,9 +80,10 @@ export function Scene({
         >
           {isImagePath ? (
             <Image
+              fill
+              priority
               alt="Background"
-              layout="fill"
-              objectFit="cover"
+              className="object-cover"
               src={scene.background}
             />
           ) : (
@@ -48,6 +91,11 @@ export function Scene({
           )}
         </motion.div>
       </AnimatePresence>
+
+      {/* eslint-disable-next-line jsx-a11y/media-has-caption */}
+      <audio ref={backgroundMusicAudioRef} loop />
+      {/* eslint-disable-next-line jsx-a11y/media-has-caption */}
+      <audio ref={soundEffectRef} />
 
       {/* Foreground */}
       {scene.foreground && (
@@ -94,7 +142,7 @@ export function Scene({
           speaker={scene.conversation.speaker}
         />
       )}
-    </button>
+    </div>
   );
 }
 
