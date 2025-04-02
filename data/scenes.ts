@@ -1840,8 +1840,7 @@ export const scenes: IScene[] = [
     background: "/images/道別/party.png",
     foreground: "/images/character.png",
     soundEffect: "海浪聲",
-    description:
-      "我不敢相信自己的眼睛",
+    description: "我不敢相信自己的眼睛",
     conversation: {
       speaker: SpeakerType.PLAYER,
       content: "……妳？",
@@ -1871,41 +1870,37 @@ export const scenes: IScene[] = [
     background: "/images/道別/party.png",
     foreground: "/images/character.png",
     soundEffect: "海浪聲",
-    description:
-      "雖然也很想相信這是真的......",
+    description: "雖然也很想相信這是真的......",
     conversation: {
       speaker: SpeakerType.PLAYER,
       content: "可是你明明說過，你是審判殿堂的一部分……我不是離開展覽館了嗎？",
     },
-  },  
+  },
   {
     background: "/images/道別/party.png",
     foreground: "/images/character.png",
     soundEffect: "海浪聲",
-    description:
-      "她指向我，語氣依舊平靜，卻帶著一種理所當然的意味",
+    description: "她指向我，語氣依舊平靜，卻帶著一種理所當然的意味",
     conversation: {
       speaker: SpeakerType.XI,
       content: "是啊，但審判殿堂是誰的呢？",
     },
-  },  
+  },
   {
     background: "/images/道別/party.png",
     foreground: "/images/character.png",
     soundEffect: "海浪聲",
-    description:
-      "她指向我，語氣依舊平靜，卻帶著一種理所當然的意味",
+    description: "她指向我，語氣依舊平靜，卻帶著一種理所當然的意味",
     conversation: {
       speaker: SpeakerType.XI,
       content: "這裡的一切，都來自你自己。你的內心當然可以主宰這個世界的變化",
     },
-  }, 
+  },
   {
     background: "/images/道別/party.png",
     foreground: "/images/character.png",
     soundEffect: "海浪聲",
-    description:
-      "……所以，因為我想見她，所以她就出現了？",
+    description: "……所以，因為我想見她，所以她就出現了？",
     conversation: {
       speaker: SpeakerType.XI,
       content: "如果你願意這麼理解的話。",
@@ -1922,28 +1917,26 @@ export const scenes: IScene[] = [
     background: "/images/道別/party.png",
     foreground: "/images/character.png",
     soundEffect: "海浪聲",
-    description:
-      "海浪聲輕輕拍打岸邊，臉頰傳來灼燙感，或許是被夕陽照的吧",
+    description: "海浪聲輕輕拍打岸邊，臉頰傳來灼燙感，或許是被夕陽照的吧",
   },
   {
     background: "/images/道別/party.png",
     foreground: "/images/character.png",
     soundEffect: "海浪聲",
-    description:
-      "不確定是不是錯覺，曦流一貫淡漠的臉上似乎閃過一絲瞭然的竊笑",
-      conversation: {
-        speaker: SpeakerType.PLAYER,
-        content: "……那這次，你還會離開嗎？",
-      },
+    description: "不確定是不是錯覺，曦流一貫淡漠的臉上似乎閃過一絲瞭然的竊笑",
+    conversation: {
+      speaker: SpeakerType.PLAYER,
+      content: "……那這次，你還會離開嗎？",
+    },
   },
   {
     background: "/images/道別/party.png",
     foreground: "/images/character.png",
     soundEffect: "海浪聲",
-      conversation: {
-        speaker: SpeakerType.XI,
-        content: "只要你還願意與自己對話，我就不會消失。",
-      },
+    conversation: {
+      speaker: SpeakerType.XI,
+      content: "只要你還願意與自己對話，我就不會消失。",
+    },
   },
   {
     background: "/images/道別/party.png",
@@ -1956,44 +1949,41 @@ export const scenes: IScene[] = [
     background: "/images/道別/party.png",
     foreground: "/images/character.png",
     soundEffect: "海浪聲",
-    description:
-      "曦流拆下腰上掛著的的沙漏握在手上",
-      conversation: {
-        speaker: SpeakerType.XI,
-        content: "對了，我還要給你一樣東西。",
-      },
+    description: "曦流拆下腰上掛著的的沙漏握在手上",
+    conversation: {
+      speaker: SpeakerType.XI,
+      content: "對了，我還要給你一樣東西。",
+    },
   },
   {
     background: "/images/道別/party.png",
     foreground: "/images/character.png",
     soundEffect: "海浪聲",
-    description:
-      "是在審判殿堂裡，曦流帶在身上的沙漏",
-      conversation: {
-        speaker: SpeakerType.XI,
-        content: "記得這個嗎？你想到為什麼它停住了嗎？",
-      },
-      buttons: [
-          { content: "因為這裡的時間是靜止的。", jumpPage: 1 },
-          { content: "因為我還沒做出決定。", jumpPage: 1 },
-          { content: "因為這段旅程還沒結束。", jumpPage: 1 },
-          ]
+    description: "是在審判殿堂裡，曦流帶在身上的沙漏",
+    conversation: {
+      speaker: SpeakerType.XI,
+      content: "記得這個嗎？你想到為什麼它停住了嗎？",
+    },
+    buttons: [
+      { content: "因為這裡的時間是靜止的。", jumpPage: 1 },
+      { content: "因為我還沒做出決定。", jumpPage: 1 },
+      { content: "因為這段旅程還沒結束。", jumpPage: 1 },
+    ],
   },
   {
     background: "/images/道別/party.png",
     foreground: "/images/character.png",
     soundEffect: "海浪聲",
-    description:
-      "曦流點點頭，好像早就易料到我會這樣回答",
-      conversation: {
-        speaker: SpeakerType.XI,
-        content: "那麼——你想讓它繼續流動嗎？",
-      },
-      buttons: [
-          { content: "我已經準備好了。", jumpPage: 1 },
-          { content: "我接受過去，也接受未來。", jumpPage: 1 },
-          { content: "……時間該動了。", jumpPage: 1 },
-          ]
+    description: "曦流點點頭，好像早就易料到我會這樣回答",
+    conversation: {
+      speaker: SpeakerType.XI,
+      content: "那麼——你想讓它繼續流動嗎？",
+    },
+    buttons: [
+      { content: "我已經準備好了。", jumpPage: 1 },
+      { content: "我接受過去，也接受未來。", jumpPage: 1 },
+      { content: "……時間該動了。", jumpPage: 1 },
+    ],
   },
   {
     background: "/images/道別/party.png",
@@ -2001,10 +1991,10 @@ export const scenes: IScene[] = [
     soundEffect: "海浪聲",
     description:
       "一陣微風吹過，玻璃內的沙粒微微顫動；\n接著，隨著第一顆細沙慢慢落下，整個海灘的光線也產生變化——時間開始流動了。",
-      conversation: {
-        speaker: SpeakerType.XI,
-        content: "看來，你已經找到自己的答案了。",
-      },
+    conversation: {
+      speaker: SpeakerType.XI,
+      content: "看來，你已經找到自己的答案了。",
+    },
   },
   {
     background: "/images/道別/party.png",
@@ -2067,8 +2057,7 @@ export const scenes: IScene[] = [
     soundEffect: "派對音樂",
     conversation: {
       speaker: SpeakerType.DAD,
-      content:
-        "你走過的路，我都看在眼裡。\n辛苦了，孩子。",
+      content: "你走過的路，我都看在眼裡。\n辛苦了，孩子。",
     },
   },
   {
@@ -2112,8 +2101,7 @@ export const scenes: IScene[] = [
   {
     background: "/images/道別/party.png",
     soundEffect: "派對音樂",
-    description:
-      "不知何時，曦流已站在他的身旁。\n曦流語氣平靜卻溫柔：",
+    description: "不知何時，曦流已站在他的身旁。\n曦流語氣平靜卻溫柔：",
     conversation: {
       speaker: SpeakerType.XI,
       content:
@@ -2144,8 +2132,7 @@ export const scenes: IScene[] = [
   {
     background: "/images/道別/party.png",
     soundEffect: "海浪聲",
-    description:
-      "我愣了一下，順著視線望向海面。\n這艘船，像是一直在等待著我",
+    description: "我愣了一下，順著視線望向海面。\n這艘船，像是一直在等待著我",
   },
   {
     background: "/images/道別/party.png",
@@ -2162,23 +2149,18 @@ export const scenes: IScene[] = [
   {
     background: "/images/道別/party.png",
     soundEffect: "海浪聲",
-    description:
-      "而且，他們只是心中的幻影，我真正該走向的人，其實在另一邊。",
+    description: "而且，他們只是心中的幻影，我真正該走向的人，其實在另一邊。",
   },
   {
     background: "/images/道別/party.png",
     soundEffect: "海浪聲",
-    description:
-      "我轉過身，走向海岸。\n腳步踏入水中，冰涼的海浪輕輕掠過腳背",
-      buttons: [
-        { content: "上船吧", jumpPage: 1 },
-        ]
+    description: "我轉過身，走向海岸。\n腳步踏入水中，冰涼的海浪輕輕掠過腳背",
+    buttons: [{ content: "上船吧", jumpPage: 1 }],
   },
   {
     background: "/images/道別/party.png",
     soundEffect: "海浪聲",
-    description:
-      "我躍上船，抓住船槳，回頭最後望向曦流",
+    description: "我躍上船，抓住船槳，回頭最後望向曦流",
     conversation: {
       speaker: SpeakerType.PLAYER,
       content: "……再見？",
@@ -2187,8 +2169,7 @@ export const scenes: IScene[] = [
   {
     background: "/images/道別/party.png",
     soundEffect: "海浪聲",
-    description:
-      "曦流微笑，搖搖頭",
+    description: "曦流微笑，搖搖頭",
     conversation: {
       speaker: SpeakerType.XI,
       content: "我一直都在啊。",
@@ -2197,8 +2178,7 @@ export const scenes: IScene[] = [
   {
     background: "/images/道別/party.png",
     soundEffect: "海浪聲",
-    description:
-      "我微怔，不過馬上反應過來",
+    description: "我微怔，不過馬上反應過來",
     conversation: {
       speaker: SpeakerType.PLAYER,
       content: "是啊，我知道的。",
@@ -2239,9 +2219,9 @@ export const scenes: IScene[] = [
   },
   {
     background: "bg-white",
-      buttons: [
-        { content: "這是夢嗎？還是……", jumpPage: 1 },
-        { content: "……無論如何，這一次，我知道該往哪裡去了。", jumpPage: 1 },
-        ]
+    buttons: [
+      { content: "這是夢嗎？還是……", jumpPage: 1 },
+      { content: "……無論如何，這一次，我知道該往哪裡去了。", jumpPage: 1 },
+    ],
   },
 ];
