@@ -998,14 +998,14 @@ export const scenes: IScene[] = [
   // ------------------------------------------------------------------------------------------------
 
   {
-    background: "/images/展覽館/展品-green.png",
+    background: "/images/展覽館/展品區-green.png",
     foreground: "/images/character.png",
     backgroundMusic: "/soundEffects/Mystery Unveiled.mp3",
     description:
       "熟悉的展覽館再次映入眼簾，然而腳下傳來的觸感卻與記憶中的硬地板。\n我們踩在湖水與浮島交錯的濕地上，夜幕般的空間中，星星不僅點綴了湖面，也輕輕漂浮在空中，如同尚未落定的願望。",
   },
   {
-    background: "/images/展覽館/展品-green.png",
+    background: "/images/展覽館/展品區-green.png",
     foreground: "/images/character.png",
     description:
       "展櫃裡悄然多了一件新展品，散發著溫柔的微光，仿若剛從湖心撈起的星星。",
@@ -1015,7 +1015,7 @@ export const scenes: IScene[] = [
     },
   },
   {
-    background: "/images/展覽館/展品-green.png",
+    background: "/images/展覽館/展品區-green.png",
     foreground: "/images/character.png",
     description:
       "我伸手碰觸一顆懸浮的星星，微光順著指尖流轉，化作細碎的波紋擴散開來。\n沒有多說什麼，我收回手轉身踏入展館深處。",
@@ -1295,14 +1295,14 @@ export const scenes: IScene[] = [
   // ---------------------------------------------------------------------------------
 
   {
-    background: "/images/展覽館/展品-brown.png",
+    background: "/images/展覽館/展品區-brown.png",
     foreground: "/images/character.png",
     backgroundMusic: "/soundEffects/Mystery Unveiled.mp3",
     description:
       "回到了展覽館。\n曾經封閉的門，如今成為一節靜止的火車車廂，斑駁的車體被野花覆蓋，搖曳的花影隨微風輕輕起伏。車窗映照出藍天與遼闊的綠地，彷彿時間靜止於此",
   },
   {
-    background: "/images/展覽館/展品-brown.png",
+    background: "/images/展覽館/展品區-brown.png",
     foreground: "/images/character.png",
     description:
       "展櫃裡的花束跟剛才曦流遞給我的一模一樣。似乎每次被傳送回來後，展覽館都會把我們剛才的經歷納入空間裡？",
@@ -1312,7 +1312,7 @@ export const scenes: IScene[] = [
     },
   },
   {
-    background: "/images/展覽館/展品-brown.png",
+    background: "/images/展覽館/展品區-brown.png",
     foreground: "/images/character.png",
     description:
       "我現在幾乎可以確定，我在這座特別的展覽管裡經歷的一切，都是出於我的認知與我曾經的記憶。或許我可以在這裡找回我自己？。",
@@ -1753,23 +1753,23 @@ export const scenes: IScene[] = [
   // --------------------------------------------------------------------------------
 
   {
-    background: "/images/展覽館/展品-gray.png",
+    background: "/images/展覽館/展品區-gray.png",
     backgroundMusic: "/soundEffects/Mystery Unveiled.mp3",
     description:
       "回來了。高聳的樹木在微光下投下層層疊疊的陰影，石柱零星佇立在林間，彷彿見證著一場無聲的告別。\n藍、綠、粉的落葉鋪滿了地面，隨著微風輕輕翻動，像是時光殘留下的片語斷章。",
   },
   {
-    background: "/images/展覽館/展品-gray.png",
+    background: "/images/展覽館/展品區-gray.png",
     description:
       "很寂靜的感覺。……接下來的路，需要由我自己走了吧？\n像是在問自己，也像是在問那片林間，問那個已經不在身邊的人。",
   },
   {
-    background: "/images/展覽館/展品-gray.png",
+    background: "/images/展覽館/展品區-gray.png",
     description:
       "明明剛才她還在這裡，卻像是從來沒有存在過一樣。\n我試圖回憶她的聲音、她的目光、她那些平淡卻真切的話語，\n可這一切如今變得遙遠，像是留在夢境的邊緣，快要被時間沖散了。",
   },
   {
-    background: "/images/展覽館/展品-gray.png",
+    background: "/images/展覽館/展品區-gray.png",
     description:
       "這種感覺算是一種遺憾嗎？\n但心裡確實空了一塊，像有什麼無聲地塌陷下去。",
   },
@@ -2159,7 +2159,7 @@ export const scenes: IScene[] = [
       "隨著船隨波漂遠，金紅色的餘暉逐漸籠罩整個畫面，光線越來越強，最終模糊成一片暖金色的光。",
   },
   {
-    background: "bg-golden",
+    background: "/images/道別/boat-far.jpg",
     description:
       "隱約間，某種微弱的「滴——滴——」聲開始響起，最初模糊不清，像是從遙遠的另一個世界傳來，然後漸漸變得清晰。\n模糊的交談聲夾雜著：「……醒了嗎？」",
   },
