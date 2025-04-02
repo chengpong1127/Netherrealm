@@ -240,9 +240,10 @@ function ExploreButton({
   return (
     <button
       className="absolute text-white px-4 py-2 rounded-full backdrop-blur-sm bg-black bg-opacity-40
-      border-4 border-double aspect-square
-      hover:shadow-[0_0_20px_rgba(255,255,255,0.7)]
-      transition-all duration-300 leading-relaxed text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl"
+  border-4 border-double aspect-square
+  hover:shadow-[0_0_20px_rgba(255,255,255,0.7)]
+  transition-shadow duration-300
+  leading-relaxed text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl"
       style={{
         width: "10%",
         left: `${position.x}%`,
