@@ -1,9 +1,10 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import { Scene } from "@/components/scene";
 import { scenes } from "@/data/scenes";
 import { PageNavigator } from "@/components/page-navigator";
+import { usePreloadImages } from "@/hooks/usePreloadImages";
 
 export default function Home() {
   const [currentSceneIndex, setCurrentSceneIndex] = useState(0);
@@ -18,6 +19,19 @@ export default function Home() {
       return nextIndex;
     });
   };
+
+  usePreloadImages(
+    scenes
+      .map((scene) => scene.background)
+      .filter((background) => background.includes("/")),
+  );
+  useEffect(() => {
+    console.log(
+      scenes
+        .map((scene) => scene.background)
+        .filter((background) => background.includes("/")),
+    );
+  });
 
   return (
     <section className="w-full h-full">
