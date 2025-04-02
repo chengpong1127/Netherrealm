@@ -102,7 +102,7 @@ export const scenes: IScene[] = [
     background: "bg-white",
     conversation: {
       speaker: SpeakerType.PLAYER,
-      content: "前方有光——或許，只要靠近那裡，就能找到答案",
+      content: "前方有光——或許，只要靠近那裡，就能找到答案。",
     },
   },
   {
@@ -519,7 +519,6 @@ export const scenes: IScene[] = [
   {
     background: "/images/彩虹路/4-彩虹路-荒原.jpeg",
     foreground: "/images/character.png",
-    backgroundMusic: "stop",
     description:
       "彩虹小徑攀上一座一座的山坡，看起來路途崎嶇；如果放眼遠眺的話還是隱約看得到目標前往的山",
     buttons: [
@@ -916,7 +915,7 @@ export const scenes: IScene[] = [
     conversation: {
       speaker: SpeakerType.PLAYER,
       content:
-        "這畫面是中學吉他社的團練活動吧？對了，我曾經因為很想擔任幹部，而度過一段每天練吉他的時期",
+        "這畫面是中學吉他社的團練活動吧？對了，我曾經因為很想擔任幹部，而度過一段每天練吉他的時期。",
     },
   },
   {
@@ -935,7 +934,7 @@ export const scenes: IScene[] = [
     conversation: {
       speaker: SpeakerType.PLAYER,
       content:
-        "這是我最喜歡的樂團，它們的歌陪我度過了無數個睡不著的夜晚，雖然通常都是因為聽太嗨才睡不著",
+        "這是我最喜歡的樂團，它們的歌陪我度過了無數個睡不著的夜晚，雖然通常都是因為聽太嗨才睡不著。",
     },
   },
   {
@@ -956,7 +955,7 @@ export const scenes: IScene[] = [
     conversation: {
       speaker: SpeakerType.PLAYER,
       content:
-        "這些光，我一直都擁有著嗎？即使沒有握在手裡，我仍然為它的美好所感動",
+        "這些光，我一直都擁有著嗎？即使沒有握在手裡，我仍然為它的美好所感動。",
     },
   },
   {
@@ -1104,7 +1103,7 @@ export const scenes: IScene[] = [
       "站在一座廢棄的鐵軌上，列車靜靜地停靠在枕木上，車身斑駁，藤蔓纏繞著窗框，宛如時間在此刻凝結",
     conversation: {
       speaker: SpeakerType.PLAYER,
-      content: "這個場景，好像乘載著很多故事",
+      content: "這個場景，好像乘載著很多故事。",
     },
     buttons: [{ content: "嘗試進入", jumpPage: 1 }],
   },
@@ -1207,7 +1206,7 @@ export const scenes: IScene[] = [
       "一陣微風拂來，在滿地花草末梢掀起一陣綠色波浪；風來自車尾少了玻璃的大面窗，框起澄澈的天空",
     conversation: {
       speaker: SpeakerType.PLAYER,
-      content: "或許，遺憾會存在，就是意味著那些過往對我來說很重要",
+      content: "或許，遺憾會存在，就是意味著那些過往對我來說很重要。",
     },
     buttons: [{ content: "走到窗前", jumpPage: 1 }],
   },
@@ -1229,7 +1228,7 @@ export const scenes: IScene[] = [
       "原來如此，雖然沒有去國外發展，但後來我體驗了一段打工換宿的時期，還因此交到一些朋友，都記錄在手帳裡了",
     conversation: {
       speaker: SpeakerType.PLAYER,
-      content: "有些機會錯過了，就真的回不去了……不過，我可能也因此擁有了什麼",
+      content: "有些機會錯過了，就真的回不去了……不過，我可能也因此擁有了什麼。",
     },
   },
   {
@@ -1814,6 +1813,7 @@ export const scenes: IScene[] = [
   {
     background: "bg-[#335CA4]",
     description: "下一站：？？？",
+    backgroundMusic: "stop",
   },
 
   // ----------------------------------------------------------------------------------------------
@@ -1881,7 +1881,7 @@ export const scenes: IScene[] = [
     description: "她指向我，語氣依舊平靜，卻帶著一種理所當然的意味",
     conversation: {
       speaker: SpeakerType.XI,
-      content: "這裡的一切，都來自你自己。你的內心當然可以主宰這個世界的變化",
+      content: "這裡的一切，都來自你自己。你的內心當然可以主宰這個世界的變化。",
     },
   },
   {
@@ -2174,9 +2174,9 @@ export const scenes: IScene[] = [
       { content: "這是夢嗎？還是……", jumpPage: 1 },
       { content: "……無論如何，這一次，我知道該往哪裡去了。", jumpPage: 1 },
     ],
-    backgroundMusic: "stop",
   },
   {
     background: "bg-white",
+    backgroundMusic: "stop",
   },
 ];
