@@ -2,6 +2,7 @@ import Image from "next/image";
 import clsx from "clsx";
 import { Divider } from "@heroui/divider";
 import { motion, AnimatePresence } from "framer-motion"; // Add AnimatePresence import
+import { useEffect, useRef } from "react";
 
 import { useTypewriterEffect } from "@/hooks/useTypewriterEffect";
 import IScene from "@/types/scene";
@@ -17,6 +18,21 @@ export function Scene({
 }) {
   const isImagePath = scene.background.includes("/");
   const hasButtons: boolean = !!scene.buttons || !!scene.exploreButton;
+  const audioRef = useRef<HTMLAudioElement | null>(null);
+
+  useEffect(() => {
+    const audioElement = audioRef.current;
+
+    if (!audioElement) return;
+
+    if (scene.backgroundMusic && scene.backgroundMusic !== "stop") {
+      audioElement.src = scene.backgroundMusic;
+      audioElement.play();
+    } else if (scene.backgroundMusic === "stop") {
+      audioElement.pause();
+      audioElement.currentTime = 0;
+    }
+  }, [scene.backgroundMusic]);
 
   return (
     <button
@@ -48,6 +64,10 @@ export function Scene({
           )}
         </motion.div>
       </AnimatePresence>
+
+      {/* Add the audio element */}
+      {/* eslint-disable-next-line jsx-a11y/media-has-caption */}
+      <audio ref={audioRef} loop />
 
       {/* Foreground */}
       {scene.foreground && (
