@@ -45,7 +45,8 @@ export function Scene({
   }, [scene.backgroundMusic]);
 
   return (
-    <button
+    // eslint-disable-next-line jsx-a11y/click-events-have-key-events, jsx-a11y/no-static-element-interactions
+    <div
       className="relative w-full h-full overflow-hidden select-none whitespace-pre-line cursor-default text-base sm:text-lg md:text-lg lg:text-xl 2xl:text-3xl"
       onClick={() => !hasButtons && onChangeScene?.(scene.jumpPage ?? 1)}
     >
@@ -124,7 +125,7 @@ export function Scene({
           speaker={scene.conversation.speaker}
         />
       )}
-    </button>
+    </div>
   );
 }
 
