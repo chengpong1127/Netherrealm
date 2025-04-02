@@ -723,7 +723,7 @@ export const scenes: IScene[] = [
     },
   },
   {
-    background: "/images/展覽館/gallery-pink-orig.png",
+    background: "/images/展覽館/gallery-green-orig.png",
     foreground: "/images/character.png",
     soundEffect: "柔和緩慢的鋼琴",
     description: "湖綠色那一道拱型布幕上的金屬銘牌閃過一抹碎光",
@@ -736,7 +736,7 @@ export const scenes: IScene[] = [
     },
   },
   {
-    background: "/images/展覽館/gallery-pink-orig.png",
+    background: "/images/展覽館/gallery-green-orig.png",
     soundEffect: "柔和緩慢的鋼琴",
     description:
       "「有些星星落入掌心，\n有些則隨波閃爍。\n但它們點亮夜空的那一刻，已經足夠美麗。」",
@@ -1121,7 +1121,7 @@ export const scenes: IScene[] = [
     },
   },
   {
-    background: "/images/展覽館/gallery-pink-orig.png",
+    background: "/images/展覽館/gallery-brown-orig.png",
     foreground: "/images/character.png",
     soundEffect: "柔和緩慢的鋼琴",
     description: "就在這時，另一座拱門前的金屬牌閃爍了一下，嶄新的文字悄然浮現",
@@ -1134,7 +1134,7 @@ export const scenes: IScene[] = [
     },
   },
   {
-    background: "/images/展覽館/gallery-pink-orig.png",
+    background: "/images/展覽館/gallery-brown-orig.png",
     soundEffect: "柔和緩慢的鋼琴",
     description:
       "「終點遙遠，旅途卻未曾空手而歸。\n裂縫間的花，仍在光裡盛放。\n你，願意看看它們嗎？」",
@@ -1445,7 +1445,7 @@ export const scenes: IScene[] = [
     },
   },
   {
-    background: "/images/展覽館/gallery-pink-orig.png",
+    background: "/images/展覽館/gallery-gray-orig.png",
     foreground: "/images/character.png",
     soundEffect: "柔和緩慢的鋼琴",
     description:
@@ -1459,7 +1459,7 @@ export const scenes: IScene[] = [
     },
   },
   {
-    background: "/images/展覽館/gallery-pink-orig.png",
+    background: "/images/展覽館/gallery-gray-orig.png",
     soundEffect: "柔和緩慢的鋼琴",
     description:
       "「時光靜止於石殿，古樹見證無聲的來去。\n若記憶如落葉，層層覆蓋腳下的路，\n你可願拾起一片，凝視它的紋理？」",
@@ -2192,25 +2192,25 @@ export const scenes: IScene[] = [
     },
   },
   {
-    background: "/images/道別/party-crowd.png",
+    background: "/images/道別/party.png",
     foreground: "/images/character.png",
     soundEffect: "派對音樂、歡笑聲",
     description:
-      "曦流側身，背後的暖黃光韻籠罩的沙灘派對多了許多人。\n我感到塵封的記憶開始翻湧",
+      "曦流側身，背後的暖黃光韻籠罩的沙灘派對多了許多人。\n我感到塵封的記憶開始湧動",
     conversation: {
       speaker: SpeakerType.PLAYER,
       content: "他們是……？",
     },
   },
   {
-    background: "/images/道別/party-crowd.png",
+    background: "/images/道別/party.png",
     foreground: "/images/character.png",
     soundEffect: "派對音樂、熟悉的笑聲",
     description:
-      "我情不自禁走向派對，聲音逐漸清晰，熟悉的語調、熟悉的笑聲。\n模糊氤醞的畫面轉為清晰，眼前是一場盛大的告別派對。",
+      "我情不自禁走向派對，聲音逐漸清晰，熟悉的語調、熟悉的笑聲。\n模糊氤醞的畫面轉為清晰，眼前是一場為我舉辦的盛大的告別派對。",
   },
   {
-    background: "/images/道別/party-crowd.png",
+    background: "/images/道別/party.png",
     soundEffect: "派對音樂、熟悉的聲音",
     description:
       "眾多親朋好友圍坐一堂，燭光搖曳，每個人的表情都帶著溫暖的懷念。",
@@ -2220,7 +2220,7 @@ export const scenes: IScene[] = [
     },
   },
   {
-    background: "/images/道別/party-crowd.png",
+    background: "/images/道別/party.png",
     soundEffect: "派對音樂",
     conversation: {
       speaker: SpeakerType.PARTNER,
@@ -2228,7 +2228,7 @@ export const scenes: IScene[] = [
     },
   },
   {
-    background: "/images/道別/party-crowd.png",
+    background: "/images/道別/party.png",
     soundEffect: "派對音樂",
     conversation: {
       speaker: SpeakerType.MOM,
@@ -2237,7 +2237,7 @@ export const scenes: IScene[] = [
     },
   },
   {
-    background: "/images/道別/party-crowd.png",
+    background: "/images/道別/party.png",
     soundEffect: "派對音樂",
     conversation: {
       speaker: SpeakerType.DAD,
@@ -2246,7 +2246,7 @@ export const scenes: IScene[] = [
     },
   },
   {
-    background: "/images/道別/party-crowd.png",
+    background: "/images/道別/party.png",
     soundEffect: "派對音樂",
     conversation: {
       speaker: SpeakerType.GRANDMOTHER,
@@ -2255,16 +2255,16 @@ export const scenes: IScene[] = [
     },
   },
   {
-    background: "/images/道別/party-crowd.png",
+    background: "/images/道別/party.png",
     soundEffect: "派對音樂",
     conversation: {
-      speaker: SpeakerType.PARTNER,
+      speaker: SpeakerType.LOVER,
       content:
         "我總是說啊，你老是太逞強，什麼都悶在心裡。\n現在……終於肯好好看看自己的心了嗎？",
     },
   },
   {
-    background: "/images/道別/party-crowd.png",
+    background: "/images/道別/party.png",
     soundEffect: "派對音樂",
     description:
       "我看著眼前的一切，每個人都那麼真實，那麼鮮活，時間彷彿從未在他們身上留下痕跡。\n心口傳來陣陣酸澀，像是遺忘已久的情感突然被撕裂開來。",
@@ -2274,17 +2274,17 @@ export const scenes: IScene[] = [
     },
   },
   {
-    background: "/images/道別/party-crowd.png",
+    background: "/images/道別/party.png",
     soundEffect: "派對音樂",
     description:
       "我的眼眶微熱，鼻尖發酸，他想伸手觸碰這些人，確認這一切是否真實。\n但手指只穿透了光與空氣——什麼也碰不到。",
     conversation: {
       speaker: SpeakerType.PLAYER,
-      content: "……原來，我真的這麼想念你們啊。",
+      content: "……原來，我是這麼想念你們啊。",
     },
   },
   {
-    background: "/images/道別/party-crowd.png",
+    background: "/images/道別/party.png",
     soundEffect: "派對音樂",
     description:
       "不知何時，曦流已站在他的身旁。\n曦流語氣平靜卻溫柔：",
@@ -2295,7 +2295,7 @@ export const scenes: IScene[] = [
     },
   },
   {
-    background: "/images/道別/party-crowd.png",
+    background: "/images/道別/party.png",
     soundEffect: "派對音樂",
     description:
       "他們的話語、笑容、回憶，早已銘刻在我的生命裡，成為我的一部分。",
@@ -2306,85 +2306,116 @@ export const scenes: IScene[] = [
     },
   },
   {
-    background: "/images/道別/party-crowd.png",
+    background: "/images/道別/party.png",
     soundEffect: "派對音樂",
     description:
-      "曦流輕輕側身，向遠方的海面望去——\n金色夕陽映照在水面上，一艘小舟正靜靜地浮動著。",
+      "曦流輕輕側身，向遠方的海面望去——\n金色夕陽映照在水面上，一艘小舟正靜靜地浮動著",
     conversation: {
       speaker: SpeakerType.XI,
       content: "該走了嗎？",
     },
   },
   {
-    background: "/images/道別/party-crowd.png",
+    background: "/images/道別/party.png",
     soundEffect: "海浪聲",
     description:
-      "我愣了一下，順著視線望向海面。\n這艘船，像是一直在等待著我。",
-  },
-  {
-    background: "/images/道別/party-crowd.png",
-    soundEffect: "派對音樂、海浪聲",
-    description:
-      "我深吸一口氣，回頭再看了一眼——\n派對的燈光閃爍，熟悉的身影依舊在笑著、交談著，溫暖如初。",
-  },
-  {
-    background: "/images/道別/party-crowd.png",
-    soundEffect: "派對音樂",
-    description:
-      "或許，我永遠無法真正觸及他們，\n但那些話語、笑聲、記憶……已然流淌在血脈之中，陪伴我前行。",
-  },
-  {
-    background: "/images/道別/party-crowd.png",
-    soundEffect: "海浪聲",
-    description:
-      "而且，他們只是心中的幻影，我真正該走向的對象，其實在另一邊。",
+      "我愣了一下，順著視線望向海面。\n這艘船，像是一直在等待著我",
   },
   {
     background: "/images/道別/party.png",
     soundEffect: "海浪聲",
     description:
-      "我轉過身，走向海岸。\n腳步踏入水中，冰涼的海浪輕輕掠過腳背。",
+      "我深吸一口氣，回頭再看了一眼——\n派對的燈光閃爍，熟悉的身影依舊在笑著、交談著，溫暖如初。",
   },
   {
-    background: "/images/道別/boat.png",
+    background: "/images/道別/party.png",
     soundEffect: "海浪聲",
     description:
-      "我躍上船，抓住船槳，回頭最後望向曦流。",
+      "或許，我永遠無法真正觸及他們，\n但那些話語、笑聲、記憶……已然流淌在血脈之中，陪伴我前行。",
+  },
+  {
+    background: "/images/道別/party.png",
+    soundEffect: "海浪聲",
+    description:
+      "而且，他們只是心中的幻影，我真正該走向的人，其實在另一邊。",
+  },
+  {
+    background: "/images/道別/party.png",
+    soundEffect: "海浪聲",
+    description:
+      "我轉過身，走向海岸。\n腳步踏入水中，冰涼的海浪輕輕掠過腳背",
+      buttons: [
+        { content: "上船吧", jumpPage: 1 },
+        ]
+  },
+  {
+    background: "/images/道別/party.png",
+    soundEffect: "海浪聲",
+    description:
+      "我躍上船，抓住船槳，回頭最後望向曦流",
     conversation: {
       speaker: SpeakerType.PLAYER,
       content: "……再見？",
     },
   },
   {
-    background: "/images/道別/boat.png",
+    background: "/images/道別/party.png",
     soundEffect: "海浪聲",
     description:
-      "曦流微笑，搖搖頭。",
+      "曦流微笑，搖搖頭",
     conversation: {
       speaker: SpeakerType.XI,
       content: "我一直都在啊。",
     },
   },
   {
-    background: "/images/道別/boat.png",
+    background: "/images/道別/party.png",
     soundEffect: "海浪聲",
     description:
-      "我微怔，旋即露出釋然的笑容。",
+      "我微怔，不過馬上反應過來",
     conversation: {
       speaker: SpeakerType.PLAYER,
-      content: "是啊，我知道了。",
+      content: "是啊，我知道的。",
     },
   },
   {
-    background: "/images/道別/boat.png",
+    background: "/images/道別/party.png",
     soundEffect: "海浪聲",
     description:
       "我握緊船槳，輕輕一划，船緩緩離岸。\n夕陽倒映在水面，金光隨波蕩漾。",
+  },
+
+  // ----------------------------------------------------------------------------------
+
+  {
+    background: "/images/道別/boat-far.png",
+    soundEffect: "海浪聲",
+    description:
+      "夕陽將我的身影拉得修長，波光粼粼的水面反射出我的剪影，\n而在漣漪的折射間，彷彿映出另一個世界的影子，但卻不清晰。",
   },
   {
     background: "/images/道別/boat-far.png",
     soundEffect: "海浪聲",
     description:
-      "小舟逐漸向遠方漂去，逐漸被日暮吞沒……",
+      "隨著船隨波漂遠，金紅色的餘暉逐漸籠罩整個畫面，光線越來越強，最終模糊成一片暖金色的光。",
+  },
+  {
+    background: "bg-golden",
+    soundEffect: "模糊的滴答聲",
+    description:
+      "隱約間，某種微弱的「滴——滴——」聲開始響起，最初模糊不清，像是從遙遠的另一個世界傳來，然後漸漸變得清晰。\n模糊的交談聲夾雜著：「……醒了嗎？」",
+  },
+  {
+    background: "bg-white",
+    soundEffect: "醫院儀器聲",
+    description:
+      "海浪聲與風聲逐漸淡去，只剩下醫院儀器的電子聲規律地響著。\n畫面仍停留在暖金色的波光中，漣漪細微地擴散著，彷彿仍在流動，最後緩緩淡出。",
+  },
+  {
+    background: "bg-white",
+      buttons: [
+        { content: "這是夢嗎？還是……", jumpPage: 1 },
+        { content: "……無論如何，這一次，我知道該往哪裡去了。", jumpPage: 1 },
+        ]
   },
 ];
