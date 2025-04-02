@@ -198,6 +198,15 @@ export const scenes: IScene[] = [
   {
     background: "/images/展覽館/gallery-pink-orig.png",
     foreground: "/images/character.png",
+    description: "現在是什麼情況？先弄清楚一下好了",
+    conversation: {
+      speaker: SpeakerType.XI,
+      content: "你的處境取決於你怎麼定義。",
+    },
+  },
+  {
+    background: "/images/展覽館/gallery-pink-orig.png",
+    foreground: "/images/character.png",
     description: "感覺是問不出實際內容了。還是先自己觀察看看？",
     exploreButton: {
       content: "環顧四周",
