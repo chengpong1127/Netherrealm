@@ -1820,7 +1820,7 @@ export const scenes: IScene[] = [
 
   {
     background: "/images/道別/party.png",
-    backgroundMusic: "/soundEffects/Ocean Bloom Morning Dew.mp3",
+    backgroundMusic: "/soundEffects/Ocean Background Music.mp3",
     description:
       "門後是一片熱帶密林，我撥開樹叢，沙灘派對的燈火映照在波光粼粼的海面上。\n與熱鬧的畫面違和的是，派對裡一個人都沒有，一切都顯得輕盈而遙遠",
   },
