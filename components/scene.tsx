@@ -44,7 +44,11 @@ export function Scene({
 
     const soundEffectElement = soundEffectRef.current;
 
-    if (soundEffectElement && scene.soundEffect) {
+    if (
+      soundEffectElement &&
+      scene.soundEffect &&
+      scene.soundEffect.includes("/")
+    ) {
       if (scene.soundEffect) {
         soundEffectElement.src = scene.soundEffect;
         soundEffectElement.volume = 1;
@@ -76,9 +80,9 @@ export function Scene({
         >
           {isImagePath ? (
             <Image
+              fill
               alt="Background"
-              layout="fill"
-              objectFit="cover"
+              className="object-cover"
               src={scene.background}
             />
           ) : (
