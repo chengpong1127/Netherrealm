@@ -55,97 +55,93 @@ export function Scene({
         soundEffectElement.play();
       }
     }
+
+    return;
   }, [scene.backgroundMusic, scene.soundEffect]);
 
   return (
-    <div className="flex items-center justify-center w-screen h-screen bg-black">
-      <div
-        className="relative bg-gray-900 overflow-hidden"
-        style={{
-          aspectRatio: "16 / 9", // 固定比例為 16:9
-          width: "100%",
-          maxWidth: "100vw",
-          maxHeight: "100vh",
-        }}
+    // eslint-disable-next-line jsx-a11y/click-events-have-key-events, jsx-a11y/no-static-element-interactions
+    <div
+      className="relative w-full h-full overflow-hidden select-none whitespace-pre-line cursor-default text-base sm:text-lg md:text-lg lg:text-xl 2xl:text-3xl"
+      onClick={() => !hasButtons && onChangeScene?.(scene.jumpPage ?? 1)}
+    >
+      <AnimatePresence
+        mode={scene.transition?.mode ? scene.transition.mode : "sync"}
       >
-        <AnimatePresence
-          mode={scene.transition?.mode ? scene.transition.mode : "sync"}
+        <motion.div
+          key={scene.background}
+          animate={{ opacity: 1 }}
+          className="absolute inset-0 w-full h-auto"
+          exit={{ opacity: 0 }}
+          initial={{ opacity: 0 }}
+          transition={{
+            duration: scene.transition ? scene.transition.duration : 0.5,
+          }}
         >
-          <motion.div
-            key={scene.background}
-            animate={{ opacity: 1 }}
-            className="absolute inset-0 w-full h-full"
-            exit={{ opacity: 0 }}
-            initial={{ opacity: 0 }}
-            transition={{
-              duration: scene.transition ? scene.transition.duration : 0.5,
-            }}
-          >
-            {isImagePath ? (
-              <Image
-                fill
-                priority
-                alt="Background"
-                className="object-cover"
-                src={scene.background}
-              />
-            ) : (
-              <div className={clsx("h-full w-full", scene.background)} />
-            )}
-          </motion.div>
-        </AnimatePresence>
-
-        {/* eslint-disable-next-line jsx-a11y/media-has-caption */}
-        <audio ref={backgroundMusicAudioRef} loop />
-        {/* eslint-disable-next-line jsx-a11y/media-has-caption */}
-        <audio ref={soundEffectRef} />
-
-        {/* Foreground */}
-        {scene.foreground && (
-          <motion.div
-            animate={{ opacity: 1 }}
-            initial={{ opacity: 0 }}
-            transition={{ duration: 1 }}
-          >
+          {isImagePath ? (
             <Image
-              alt="Foreground"
-              className="absolute left-0 bottom-0 translate-y-[30%] h-[50%] w-[30%]"
-              height={600}
-              layout="intrinsic"
-              objectFit="contain"
-              src={scene.foreground}
-              width={600}
+              fill
+              priority
+              alt="Background"
+              className="object-cover"
+              src={scene.background}
             />
-          </motion.div>
-        )}
-        {scene.description && <Description content={scene.description} />}
+          ) : (
+            <div className={clsx("h-full w-full", scene.background)} />
+          )}
+        </motion.div>
+      </AnimatePresence>
 
-        {scene.exploreButton && (
-          <ExploreButton
-            content={scene.exploreButton.content}
-            position={scene.exploreButton.position}
-            onClick={() => onChangeScene?.(scene.jumpPage ?? 1)}
-          />
-        )}
+      {/* eslint-disable-next-line jsx-a11y/media-has-caption */}
+      <audio ref={backgroundMusicAudioRef} loop />
+      {/* eslint-disable-next-line jsx-a11y/media-has-caption */}
+      <audio ref={soundEffectRef} />
 
-        {scene.buttons && (
-          <div className="absolute top-1/2 -right-6 transform -translate-y-1/2 flex flex-col space-y-8 w-[30%]">
-            {scene.buttons.map(({ content, jumpPage }, index) => (
-              <Button
-                key={index}
-                content={content}
-                onClick={() => onChangeScene?.(jumpPage)}
-              />
-            ))}
-          </div>
-        )}
-        {scene.conversation && (
-          <Conversation
-            content={scene.conversation.content}
-            speaker={scene.conversation.speaker}
+      {/* Foreground */}
+      {scene.foreground && (
+        <motion.div
+          animate={{ opacity: 1 }}
+          initial={{ opacity: 0 }}
+          transition={{ duration: 1 }}
+        >
+          <Image
+            alt="Foreground"
+            className="absolute left-0 bottom-0 translate-y-[30%] h-[50%] w-[30%]"
+            height={600}
+            layout="intrinsic"
+            objectFit="contain"
+            src={scene.foreground}
+            width={600}
           />
-        )}
-      </div>
+        </motion.div>
+      )}
+      {scene.description && <Description content={scene.description} />}
+
+      {scene.exploreButton && (
+        <ExploreButton
+          content={scene.exploreButton.content}
+          position={scene.exploreButton.position}
+          onClick={() => onChangeScene?.(scene.jumpPage ?? 1)}
+        />
+      )}
+
+      {scene.buttons && (
+        <div className="absolute top-1/2 -right-6 transform -translate-y-1/2 flex flex-col space-y-8 w-[30%]">
+          {scene.buttons.map(({ content, jumpPage }, index) => (
+            <Button
+              key={index}
+              content={content}
+              onClick={() => onChangeScene?.(jumpPage)}
+            />
+          ))}
+        </div>
+      )}
+      {scene.conversation && (
+        <Conversation
+          content={scene.conversation.content}
+          speaker={scene.conversation.speaker}
+        />
+      )}
     </div>
   );
 }
