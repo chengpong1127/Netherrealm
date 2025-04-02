@@ -81,6 +81,7 @@ export function Scene({
           {isImagePath ? (
             <Image
               fill
+              priority
               alt="Background"
               className="object-cover"
               src={scene.background}
