@@ -18,31 +18,42 @@ export function Scene({
 }) {
   const isImagePath = scene.background.includes("/");
   const hasButtons: boolean = !!scene.buttons || !!scene.exploreButton;
-  const audioRef = useRef<HTMLAudioElement | null>(null);
+  const backgroundMusicAudioRef = useRef<HTMLAudioElement | null>(null);
+  const soundEffectRef = useRef<HTMLAudioElement | null>(null);
 
   useEffect(() => {
-    const audioElement = audioRef.current;
+    const audioElement = backgroundMusicAudioRef.current;
 
-    if (!audioElement) return;
+    if (audioElement) {
+      if (scene.backgroundMusic && scene.backgroundMusic !== "stop") {
+        audioElement.src = scene.backgroundMusic;
+        audioElement.volume = 1;
+        audioElement.play();
+      } else if (scene.backgroundMusic === "stop") {
+        const fadeOutInterval = setInterval(() => {
+          if (audioElement.volume > 0.1) {
+            audioElement.volume = Math.max(0, audioElement.volume - 0.1);
+          } else {
+            audioElement.pause();
+            audioElement.currentTime = 0;
+            clearInterval(fadeOutInterval);
+          }
+        }, 300);
+      }
+    }
 
-    if (scene.backgroundMusic && scene.backgroundMusic !== "stop") {
-      audioElement.src = scene.backgroundMusic;
-      audioElement.volume = 1;
-      audioElement.play();
-    } else if (scene.backgroundMusic === "stop") {
-      const fadeOutInterval = setInterval(() => {
-        if (audioElement.volume > 0.1) {
-          audioElement.volume = Math.max(0, audioElement.volume - 0.1);
-        } else {
-          audioElement.pause();
-          audioElement.currentTime = 0;
-          clearInterval(fadeOutInterval);
-        }
-      }, 300);
+    const soundEffectElement = soundEffectRef.current;
+
+    if (soundEffectElement && scene.soundEffect) {
+      if (scene.soundEffect) {
+        soundEffectElement.src = scene.soundEffect;
+        soundEffectElement.volume = 1;
+        soundEffectElement.play();
+      }
     }
 
     return;
-  }, [scene.backgroundMusic]);
+  }, [scene.backgroundMusic, scene.soundEffect]);
 
   return (
     // eslint-disable-next-line jsx-a11y/click-events-have-key-events, jsx-a11y/no-static-element-interactions
@@ -76,9 +87,10 @@ export function Scene({
         </motion.div>
       </AnimatePresence>
 
-      {/* Add the audio element */}
       {/* eslint-disable-next-line jsx-a11y/media-has-caption */}
-      <audio ref={audioRef} loop />
+      <audio ref={backgroundMusicAudioRef} loop />
+      {/* eslint-disable-next-line jsx-a11y/media-has-caption */}
+      <audio ref={soundEffectRef} />
 
       {/* Foreground */}
       {scene.foreground && (
