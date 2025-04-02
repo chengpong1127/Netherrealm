@@ -21,22 +21,33 @@ export function Scene({
   const backgroundMusicAudioRef = useRef<HTMLAudioElement | null>(null);
   const soundEffectRef = useRef<HTMLAudioElement | null>(null);
 
+  const fadeOutRef = useRef<NodeJS.Timeout | null>(null);
+
   useEffect(() => {
     const audioElement = backgroundMusicAudioRef.current;
 
     if (audioElement) {
+      // 停掉上一次的 fade out（如果有的話）
+      if (fadeOutRef.current) {
+        clearInterval(fadeOutRef.current);
+        fadeOutRef.current = null;
+      }
+
       if (scene.backgroundMusic && scene.backgroundMusic !== "stop") {
+        // 播放新音樂（立即切換）
         audioElement.src = scene.backgroundMusic;
         audioElement.volume = 1;
         audioElement.play();
       } else if (scene.backgroundMusic === "stop") {
-        const fadeOutInterval = setInterval(() => {
+        // 淡出並停止
+        fadeOutRef.current = setInterval(() => {
           if (audioElement.volume > 0.1) {
             audioElement.volume = Math.max(0, audioElement.volume - 0.1);
           } else {
             audioElement.pause();
             audioElement.currentTime = 0;
-            clearInterval(fadeOutInterval);
+            clearInterval(fadeOutRef.current!);
+            fadeOutRef.current = null;
           }
         }, 300);
       }
@@ -49,14 +60,15 @@ export function Scene({
       scene.soundEffect &&
       scene.soundEffect.includes("/")
     ) {
-      if (scene.soundEffect) {
-        soundEffectElement.src = scene.soundEffect;
-        soundEffectElement.volume = 1;
-        soundEffectElement.play();
-      }
+      // 播放音效（每次都播）
+      soundEffectElement.src = scene.soundEffect;
+      soundEffectElement.volume = 1;
+      soundEffectElement.play().catch((err) => {
+        console.error("Error playing sound effect:", err);
+      });
     }
 
-    return;
+    // return 清理函數這邊不需要多餘處理，因為 fadeOutRef 已經用 useRef 管了
   }, [scene.backgroundMusic, scene.soundEffect]);
 
   return (
