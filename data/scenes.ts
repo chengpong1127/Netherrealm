@@ -280,13 +280,13 @@ export const scenes: IScene[] = [
       "「光雨落下的地方，時間曾在這裡停歇。\n黃昏的屋簷下，你曾駐足，目送風掀起簾幕，\n照亮流轉不定的色彩。」",
   },
   {
-    background: "/images/展覽館/簾幕開.jpg",
+    background: "/images/展覽館/gallery-pink-orig.png",
     foreground: "/images/character.png",
     soundEffect: "柔和緩慢的鋼琴",
     description: "讀完後，簾幕無聲地向兩側揭開，露出門後的空間——",
   },
   {
-    background: "/images/展覽館/簾幕開.jpg",
+    background: "/images/展覽館/展品區.jpg",
     foreground: "/images/character.png",
     soundEffect: "柔和緩慢的鋼琴",
     description:
@@ -742,7 +742,7 @@ export const scenes: IScene[] = [
       "「有些星星落入掌心，\n有些則隨波閃爍。\n但它們點亮夜空的那一刻，已經足夠美麗。」",
   },
   {
-    background: "/images/展覽館/簾幕開.jpg",
+    background: "/images/展覽館/gallery-green-orig.png",
     foreground: "/images/character.png",
     soundEffect: "柔和緩慢的鋼琴",
     description: "讀完後，簾幕無聲地向兩側揭開，露出門後的空間——",
@@ -1140,7 +1140,7 @@ export const scenes: IScene[] = [
       "「終點遙遠，旅途卻未曾空手而歸。\n裂縫間的花，仍在光裡盛放。\n你，願意看看它們嗎？」",
   },
   {
-    background: "/images/展覽館/簾幕開.jpg",
+    background: "/images/展覽館/gallery-brown-orig.png",
     foreground: "/images/character.png",
     soundEffect: "柔和緩慢的鋼琴",
     description: "讀完後，簾幕無聲地向兩側揭開，露出門後的空間——",
@@ -1465,14 +1465,14 @@ export const scenes: IScene[] = [
       "「時光靜止於石殿，古樹見證無聲的來去。\n若記憶如落葉，層層覆蓋腳下的路，\n你可願拾起一片，凝視它的紋理？」",
   },
   {
-    background: "/images/展覽館/簾幕開.jpg",
+    background: "/images/展覽館/gallery-gray-orig.png",
     foreground: "/images/character.png",
     soundEffect: "柔和緩慢的鋼琴",
     description:
       "讀完後，簾幕無聲地向兩側揭開，露出門後的空間——但在進入之前，剛才的詩句讓我陷入沉思",
   },
   {
-    background: "/images/展覽館/簾幕開.jpg",
+    background: "/images/展覽館/gallery-gray-orig.png",
     foreground: "/images/character.png",
     soundEffect: "柔和緩慢的鋼琴",
     description: "剛才的詩句裡提到了「記憶」的關鍵字",
@@ -1482,7 +1482,7 @@ export const scenes: IScene[] = [
     },
   },
   {
-    background: "/images/展覽館/簾幕開.jpg",
+    background: "/images/展覽館/gallery-gray-orig.png",
     foreground: "/images/character.png",
     soundEffect: "柔和緩慢的鋼琴",
     conversation: {
@@ -1948,13 +1948,13 @@ export const scenes: IScene[] = [
       "這種感覺算是一種遺憾嗎？\n但心裡確實空了一塊，像有什麼無聲地塌陷下去。",
   },
   {
-    background: "/images/展覽館/展品區.jpg",
+    background: "/images/展覽館/gallery-pink-orig.jpg",
     soundEffect: "柔和緩慢的鋼琴",
     description:
       "收回視線，轉身踏入展覽館大廳。\n……不知不覺間，這裡變了；展區變得更加廣闊，原本空曠的展櫃不知何時多了許多展品；\n那些，是我的記憶嗎？",
   },
   {
-    background: "/images/展覽館/展品區.jpg",
+    background: "/images/展覽館/gallery-green-orig.jpg",
     soundEffect: "柔和緩慢的鋼琴",
     description:
       "靜靜地走過展覽館，目光掃過這些變化。\n從旅程開始到現在，我曾經疑惑過這間展覽館到底是什麼，為什麼它總是隨著旅程而變化。",
@@ -1965,7 +1965,7 @@ export const scenes: IScene[] = [
     },
   },
   {
-    background: "/images/展覽館/展品區.jpg",
+    background: "/images/展覽館/gallery-brown-orig.jpg",
     soundEffect: "柔和緩慢的鋼琴",
     conversation: {
       speaker: SpeakerType.PLAYER,
@@ -1974,7 +1974,7 @@ export const scenes: IScene[] = [
     },
   },
   {
-    background: "/images/展覽館/展品區.jpg",
+    background: "/images/展覽館/gallery-gray-orig.jpg",
     soundEffect: "柔和緩慢的鋼琴",
     description:
       "停下腳步，展覽館的中央出現一道門。\n它沒有任何標示，也沒有任何提示，只是一扇靜靜等候的門。",
