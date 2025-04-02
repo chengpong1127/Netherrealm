@@ -27,11 +27,21 @@ export function Scene({
 
     if (scene.backgroundMusic && scene.backgroundMusic !== "stop") {
       audioElement.src = scene.backgroundMusic;
+      audioElement.volume = 1;
       audioElement.play();
     } else if (scene.backgroundMusic === "stop") {
-      audioElement.pause();
-      audioElement.currentTime = 0;
+      const fadeOutInterval = setInterval(() => {
+        if (audioElement.volume > 0.1) {
+          audioElement.volume = Math.max(0, audioElement.volume - 0.1);
+        } else {
+          audioElement.pause();
+          audioElement.currentTime = 0;
+          clearInterval(fadeOutInterval);
+        }
+      }, 300);
     }
+
+    return;
   }, [scene.backgroundMusic]);
 
   return (
