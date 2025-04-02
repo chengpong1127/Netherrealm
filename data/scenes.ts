@@ -21,19 +21,17 @@ export const scenes: IScene[] = [
   //     y: 500,
   {
     background: "bg-white",
-    soundEffect: "輕快音樂",
   },
   {
     background: "/images/city-color.jpg",
-    soundEffect: "輕快音樂",
     conversation: {
       speaker: SpeakerType.PLAYER,
       content: "辛苦了一個禮拜，好不容易休息了…",
     },
+    backgroundMusic: "/soundEffects/Marshmallow Lukrembo.mp3",
   },
   {
     background: "/images/city-color.jpg",
-    soundEffect: "輕快音樂",
     conversation: {
       speaker: SpeakerType.PLAYER,
       content: "今天天氣不錯耶~去平常常去的那間商場好了！順便去公園曬個太陽~",
@@ -41,8 +39,7 @@ export const scenes: IScene[] = [
   },
   {
     background: "/images/city-color.jpg",
-    soundEffect: "/soundEffects/Explosions and Screams.mp3",
-    backgroundMusic: "/soundEffects/Crowd Screams.mp3",
+    backgroundMusic: "/soundEffects/Explosions and Screams.mp3",
     conversation: {
       speaker: SpeakerType.PLAYER,
       content: "！！",
@@ -533,7 +530,6 @@ export const scenes: IScene[] = [
   {
     background: "/images/彩虹路/5-彩虹路-山裡.jpg",
     foreground: "/images/character.png",
-    backgroundMusic: "/soundEffects/Cant Lose You Instrumental.mp3",
     conversation: {
       speaker: SpeakerType.PLAYER,
       content: "……！",
@@ -1004,7 +1000,7 @@ export const scenes: IScene[] = [
   {
     background: "/images/展覽館/展品區.jpg",
     foreground: "/images/character.png",
-    soundEffect: "/soundEffects/Mystery Unveiled.mp3",
+    backgroundMusic: "/soundEffects/Mystery Unveiled.mp3",
     description:
       "熟悉的展覽館再次映入眼簾，然而腳下傳來的觸感卻與記憶中的硬地板。\n我們踩在湖水與浮島交錯的濕地上，夜幕般的空間中，星星不僅點綴了湖面，也輕輕漂浮在空中，如同尚未落定的願望。",
   },
@@ -1301,7 +1297,7 @@ export const scenes: IScene[] = [
   {
     background: "/images/展覽館/展品區.jpg",
     foreground: "/images/character.png",
-    soundEffect: "/soundEffects/Mystery Unveiled.mp3",
+    backgroundMusic: "/soundEffects/Mystery Unveiled.mp3",
     description:
       "回到了展覽館。\n曾經封閉的門，如今成為一節靜止的火車車廂，斑駁的車體被野花覆蓋，搖曳的花影隨微風輕輕起伏。車窗映照出藍天與遼闊的綠地，彷彿時間靜止於此",
   },
@@ -1414,7 +1410,7 @@ export const scenes: IScene[] = [
 
   {
     background: "/images/審判/審判殿堂.jpeg",
-    backgroundMusic: "/soundEffects/Pia Maya Lost in Time.mp3",
+    backgroundMusic: "/soundEffects/Silentium Zambolino.mp3",
     description:
       "踏入了一座寧靜的石殿，或許「殿堂」並非最準確的形容。\n它沒有莊嚴的壁畫，取而代之的，是一片矗立於石間的參天古樹。樹根沿著石縫盤繞，藤蔓垂落，空氣中瀰漫著微涼的潮氣與淡淡的木香。",
     conversation: {
@@ -1631,7 +1627,7 @@ export const scenes: IScene[] = [
   },
   {
     background: "/images/審判/審判殿堂.jpeg",
-    soundEffect: "她或許是比我想像的，更加不同的存在？",
+    description: "她或許是比我想像的，更加不同的存在？",
     conversation: {
       speaker: SpeakerType.PLAYER,
       content: "……那你是什麼？",
@@ -1784,7 +1780,6 @@ export const scenes: IScene[] = [
   },
   {
     background: "/images/展覽館/展品區.jpg",
-    soundEffect: "柔和緩慢的鋼琴",
     description:
       "靜靜地走過展覽館，目光掃過這些變化。\n從旅程開始到現在，我曾經疑惑過這間展覽館到底是什麼，為什麼它總是隨著旅程而變化。",
     conversation: {
