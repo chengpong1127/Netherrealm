@@ -35,6 +35,8 @@ export function Scene({
 
       if (scene.backgroundMusic && scene.backgroundMusic !== "stop") {
         // 播放新音樂（立即切換）
+        audioElement.pause(); // 停掉正在播放的音樂
+        audioElement.currentTime = 0;
         audioElement.src = scene.backgroundMusic;
         audioElement.volume = 1;
         audioElement.play();
